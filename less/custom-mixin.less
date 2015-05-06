@@ -1,0 +1,95 @@
+/* mixins */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// custom font mixin
+.fontface(@fontfamily, @filename) {
+  font-family: @fontfamily;
+  src: url('../fonts/#{@filename}.eot');
+  src: url('../fonts/#{@filename}.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/#{@filename}.woff') format('woff'),
+  url('../fonts/#{@filename}.ttf') format('truetype'),
+  url('../fonts/#{@filename}.svg#{@filename}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// alignment
+.alignment(@display: inline-block, @align: top) {
+  display: @display;
+  vertical-align: @align;
+}
+
+// link color
+.link-color(@color) {
+  color: @color;
+  &:hover, &:active, &:focus {
+    color: lighten(@color, 25%);
+    text-decoration: none;
+  }
+}
+
+// bg-color
+.bg-color(@color) {
+  background-color: @color;
+  &:hover {
+    background-color: darken(@color, 20%);
+  }
+}
+
+// font-size
+.font-size(@size, @line: 1.125) {
+  font-size: @size;
+  line-height: @line;
+}
+
+// transform
+.transform(@value) {
+  -moz-transform: @value;
+  -ms-transform: @value;
+  -webkit-transform: @value;
+  transform: @value;
+}
+
+// Vertical gradient, from top to bottom
+.gradient-vertical(@start-color: #555, @end-color: #333, @start-percent: 0%, @end-percent: 100%) {
+  background-image: -webkit-gradient(linear, left @start-percent, left @end-percent, from(@start-color), to(@end-color)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(top, @start-color, @start-percent, @end-color, @end-percent); // Safari 5.1+, Chrome 10+
+  background-image: -moz-linear-gradient(top, @start-color @start-percent, @end-color @end-percent); // FF 3.6+
+  background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str(@start-color)}', endColorstr='#{ie-hex-str(@end-color)}', GradientType=0); // IE9 and down
+}
+
+// responsive image
+.responsive-img {
+  .size(100%, auto);
+  vertical-align: top;
+}
+
+// position zero
+.position-zero {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+// arrow
+.arrow (@width) {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: @width;
+  border-color: transparent;
+}
+
+// text-none
+.text-none {
+  overflow: hidden;
+  text-indent: -9999px;
+}

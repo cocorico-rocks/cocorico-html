@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cocorico</title>
+    <!-- include the Open Sans google font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <!-- include the Raleway google font -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
+          type='text/css'>
+    <!-- include the site stylesheet -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- include HTML5 IE enabling script and stylesheet for IE -->
+    <!--[if lt IE 9]>
+    <link type="text/css" media="all" rel="stylesheet" href="css/ie.css">
+    <script type="text/javascript" src="js/ie.js"></script>
+    <![endif]-->
+</head>
+<body class="loading">
+<!-- allow a user to go to the main content of the page -->
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<div class="skip">
+    <a tabindex="1" href="#main">skip to content</a>
+</div>
+<!-- main container of all the page elements -->
+<div id="wrapper">
+    <!-- header of the page -->
+    <header id="header">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="list-inline">
+                            <li><a href="tel:33010000000" tabindex="10"><i class="icon-phone"></i>+33(0) 1 00 00 00
+                                00</a></li>
+                            <li><a tabindex="11"
+                                   href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><i
+                                    class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- main navigation of the page -->
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" tabindex="2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- page logo -->
+                            <a class="navbar-brand" href="#" tabindex="3"><img src="images/logo.png" alt="cocorico"></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" tabindex="4">Qui sommes-nous?</a></li>
+                                <li><a href="#" tabindex="5">Favoris</a></li>
+                                <li class="dropdown">
+                                    <a href="#" tabindex="6" class="dropdown-toggle" data-toggle="dropdown"
+                                       role="button" aria-expanded="false">Mon espace (Back-end)(3)
+                                        <span class="icon-down-open-mini"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown link-flag">
+                                    <a href="#" tabindex="7" class="dropdown-toggle" data-toggle="dropdown"
+                                       role="button" aria-expanded="false"><img src="images/flag.png"
+                                                                                alt="flag description" class="flag"></a>
+                                    <ul class="dropdown-menu flag-list" role="menu">
+                                        <li><a href="#"><img src="images/flag.png" alt="flag description" class="flag"></a>
+                                        </li>
+                                        <li><a href="#"><img src="images/flag.png" alt="flag description" class="flag"></a>
+                                        </li>
+                                        <li><a href="#"><img src="images/flag.png" alt="flag description" class="flag"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="select-holder">
+                                    <select class="no-arrow currency-selector">
+                                        <option>&euro; EUR</option>
+                                        <option>$ US</option>
+                                        <option>AUD</option>
+                                        <option>CAD</option>
+                                        <option>GBP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary navbar-right" tabindex="9">D&Eacute;poser mon annonce</a>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- contain main informative part of the site -->
+    <main id="main" role="main">
+        <div class="container">
+            <div class="row">
+                <h1 class="hidden">main heading text</h1>
+                <!-- breadcrumbs -->
+                <ol class="breadcrumb col-xs-12">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Demandeur</a></li>
+                    <li>Messagerie</li>
+                </ol>
+                <!-- main-tabs -->
+                <div class="main-tabs col-xs-12">
+                    <!-- tabs -->
+                    <div role="tabpanel">
+                        <!-- form-switchers -->
+                        <form class="form-switchers">
+                            <fieldset>
+                                <legend class="hidden">formswitchers</legend>
+                                <span class="title"><label for="applicant">Demandeur (2)</label></span>
+                                <div class="radio-holder">
+                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;" checked>
+                                    <input type="radio" name="radio-switcher" id="provider" title="&nbsp;">
+                                </div>
+                                <strong class="counter"><label for="provider">Fournisseur (1)</label></strong>
+                                <input type="submit" class="hidden">
+                            </fieldset>
+                        </form>
+                        <!-- Nav tabs -->
+                        <nav class="tabset-holder">
+                            <a href="#" class="opener">
+                                <span class="hidden">opener</span>
+                                <i class="icon-down-open-mini"></i></a>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li><a href="#" data-text="Messagerie">Messagerie</a></li>
+                                <li class="active"><a href="#" data-text="Mes reservations">Mes reservations</a></li>
+                                <li><a href="#" data-text="Mes annonces">Mes factures</a></li>
+                                <li><a href="#" data-text="Commentaires">Commentaires</a></li>
+                                <li><a href="#" data-text="Mon profil">Mon profil</a></li>
+                            </ul>
+                        </nav>
+                        <!-- tab-content -->
+                        <div class="tab-content no-border">
+                            <!-- reservations -->
+                            <div role="tabpanel" class="tab-pane active" id="reservations">
+                                <!-- postarea -->
+                                <section class="postarea alt">
+                                    <header class="section-head">
+                                        <span class="result-counter">70 résultats</span>
+                                        <!-- form-filter -->
+                                        <form action="#" class="form-filter">
+                                            <fieldset>
+                                                <legend class="hidden">filters</legend>
+                                                <select class="no-arrow" title="filter your search">
+                                                    <option>Filtrer par statut &gt; aucun</option>
+                                                    <option>option</option>
+                                                    <option>option</option>
+                                                </select>
+                                                <input type="submit" class="hidden">
+                                            </fieldset>
+                                        </form>
+                                    </header>
+                                    <div class="posts-holder">
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-12">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer" itemprop="offers" itemscope
+                                                    itemtype="http://schema.org/Offer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-yellow" itemprop="url">En attente du fournisseur
+                                                </span>
+                                                <strong class="expiry">Expires dans 44 heures</strong>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer" itemprop="offers" itemscope
+                                                    itemtype="http://schema.org/Offer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-nomad" itemprop="url">Statut: Expiré</span>
+                                                <span class="empty">&nbsp;</span>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-algae-green" itemprop="url">Statut: Accepté &amp;
+                                                    payé
+                                                </span>
+                                                <span class="empty">&nbsp;</span>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-salmon" itemprop="url">Statut: Annulé</span>
+                                                <span class="empty">&nbsp;</span>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-flamingo" itemprop="url">Statut: Refusé</span>
+                                                <span class="empty">&nbsp;</span>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-polo-blue" itemprop="url">Statut: Effectué</span>
+                                                <span class="empty">&nbsp;</span>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post" itemscope itemtype="http://schema.org/Product">
+                                            <span itemprop="name" class="hidden">product name</span>
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"
+                                                                                         itemprop="image"></a></div>
+                                                <div class="area">
+                                                    <header class="head" itemprop="review" itemscope
+                                                            itemtype="http://schema.org/Review">
+                                                        <div class="area">
+                                                            <h2 itemprop="name"><a href="#">Titre de l'annonce</a></h2>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                            <p>Fournisseur: <strong>Anthoni N.</strong></p>
+                                                            <ul class="rating list-inline" itemscope
+                                                                itemtype="http://schema.org/Rating">
+                                                                <li itemprop="worstRating" content="1">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="ratingValue">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li itemprop="bestRating">
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li itemprop="datePublished" content="2015-05-12">Date
+                                                                    de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                            <strong class="booking-duration">Duree de la reservation :
+                                                                <span class="normal-text">4</span>
+                                                            </strong>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox" itemprop="description">
+                                                            <p><strong>Dernier message:</strong> ed tempus ante non
+                                                                metus ultricies vestibulum. Vestibulum eget ultrices
+                                                                nunc, nee feugiat purus. Quisque non urna et... <a
+                                                                        href="#">[En lire plus]</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <strong class="price">
+                                                    <span>
+                                                        <span itemprop="price" content="422,00">422,00</span>
+                                                        <span itemprop="priceCurrency" content="EUR">€</span>
+                                                    </span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <span class="btn btn-fuzzy-brown" itemprop="url">Statut: Erreur de
+                                                    paiement
+                                                </span>
+                                                <span class="empty">&nbsp;</span>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                    <footer class="section-foot">
+                                        <span class="result-counter">352 résultats</span>
+                                        <!-- pagination -->
+                                        <nav class="nav-pagination text-right">
+                                            <ul class="pagination">
+                                                <li><a aria-label="Previous" href="#"> <i
+                                                        class="icon-left-open-mini"></i>
+                                                    <span class="hidden">previous</span>
+                                                </a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a aria-label="Next" href="#"> <i class="icon-right-open-mini"></i>
+                                                    <span class="hidden">next</span>
+                                                </a></li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- bottom-container -->
+    <div class="bottom-container">
+        <!-- footer-aside -->
+        <aside class="aside-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- contact-info -->
+                        <div class="contact-info pull-right">
+                            <strong class="title">Nous contacter</strong>
+                            <strong class="hidden" itemscope itemtype="http://schema.org/Organization">Site
+                                name</strong>
+                            <ul class="list-unstyled" itemscope itemtype="http://schema.org/Organization">
+                                <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <address><i class="icon-location"></i>00, Lorem ipsum dolor</address>
+                                </li>
+                                <li itemprop="telephone"><a href="tel:33010000000"><i class="icon-phone"></i>+33(0) 1 00
+                                    00 00 00</a></li>
+                                <li itemprop="email"><a
+                                        href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><i
+                                        class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!-- navarea -->
+                        <nav class="navarea">
+                            <ul class="list-unstyled pull-left">
+                                <li>À PROPOS</li>
+                                <li><a href="#">Qui sommes-nous?</a></li>
+                                <li><a href="#">Comment &ccedil;a marche?</a></li>
+                                <li><a href="#">L'&eacute;quipe</a></li>
+                            </ul>
+                            <ul class="list-unstyled pull-left">
+                                <li>AIDE &amp; CONTACT</li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- footer of the page -->
+        <footer id="footer" class="container text-center">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#" class="by pull-right">Mentions légales</a>
+
+                    <p>&copy; 2015 Tous droits reserves <a href="#">LOGOTYPE</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="loader">
+    <span class="hidden">loader</span>
+</div>
+<!-- allow a user to go to the top of the page -->
+<div class="skip">
+    <a href="#header">back to top</a>
+</div>
+<!-- include jQuery library -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<!-- include custom JavaScript -->
+<script type="text/javascript" src="js/jquery.main.js"></script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<script type="text/javascript">
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+                document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                )
+        )
+        document.querySelector('head').appendChild(msViewportStyle)
+    }
+</script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+</body>
+</html>

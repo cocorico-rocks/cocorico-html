@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cocorico</title>
+    <!-- include the Open Sans google font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <!-- include the Raleway google font -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
+          type='text/css'>
+    <!-- include the site stylesheet -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- include HTML5 IE enabling script and stylesheet for IE -->
+    <!--[if lt IE 9]>
+    <link type="text/css" media="all" rel="stylesheet" href="css/ie.css">
+    <script type="text/javascript" src="js/ie.js"></script>
+    <![endif]-->
+</head>
+<body class="loading">
+<!-- allow a user to go to the main content of the page -->
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<div class="skip">
+    <a tabindex="1" href="#main">skip to content</a>
+</div>
+<!-- main container of all the page elements -->
+<div id="wrapper">
+    <!-- header of the page -->
+    <header id="header">
+        <!-- topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="list-inline">
+                            <li><a href="tel:33010000000" tabindex="10"><i class="icon-phone"></i>+33(0) 1 00 00 00
+                                00</a></li>
+                            <li><a tabindex="11"
+                                   href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><i
+                                    class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- main navigation of the page -->
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" tabindex="2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- page logo -->
+                            <a class="navbar-brand" href="#" tabindex="3"><img src="images/logo.png" alt="cocorico"></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" tabindex="4">Qui sommes-nous?</a></li>
+                                <li><a href="#" tabindex="5">Favoris</a></li>
+                                <li><a href="#" tabindex="6">S'inscrire</a></li>
+                                <li><a href="#" tabindex="7">S'identifier</a></li>
+                                <li class="dropdown link-flag">
+                                    <a href="#" tabindex="8" class="dropdown-toggle" data-toggle="dropdown"
+                                       role="button" aria-expanded="false"><img src="images/flag.png"
+                                                                                alt="flag description" class="flag"></a>
+                                    <ul class="dropdown-menu flag-list" role="menu">
+                                        <li><a href="#"><img src="images/flag.png" alt="flag description" class="flag"></a>
+                                        </li>
+                                        <li><a href="#"><img src="images/flag.png" alt="flag description" class="flag"></a>
+                                        </li>
+                                        <li><a href="#"><img src="images/flag.png" alt="flag description" class="flag"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="select-holder">
+                                    <select class="no-arrow currency-selector">
+                                        <option>&euro; EUR</option>
+                                        <option>$ US</option>
+                                        <option>AUD</option>
+                                        <option>CAD</option>
+                                        <option>GBP</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary navbar-right" tabindex="9">D&Eacute;poser mon annonce</a>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- contain main informative part of the site -->
+    <main id="main" role="main">
+        <div class="container">
+            <div class="row">
+                <h1 class="hidden">Main heading text</h1>
+
+                <h2 class="hidden">Sub heading text</h2>
+                <!-- breadcrumbs -->
+                <ol class="breadcrumb col-xs-12">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pays</a></li>
+                    <li><a href="#">Région</a></li>
+                    <li><a href="#">Département</a></li>
+                    <li><a href="#">Lieu dit</a></li>
+                    <li><a href="#">Code postale</a></li>
+                    <li>Titre de l'annonce</li>
+                </ol>
+                <!-- form-category -->
+                <form action="#" class="form-category alt col-xs-12">
+                    <fieldset>
+                        <legend class="hidden">form-category</legend>
+                        <div class="form-holder">
+                            <div class="col">
+                                <strong class="title"><label for="category">Catégorie :</label> </strong>
+
+                                <div class="select-holder">
+                                    <select id="category">
+                                        <option>Catégorie</option>
+                                        <option>Catégorie 1</option>
+                                        <option>Catégorie 2</option>
+                                        <option>Catégorie 3</option>
+                                        <option>Catégorie 4</option>
+                                        <option>Catégorie 5</option>
+                                        <option>Catégorie 1</option>
+                                        <option>Catégorie 2</option>
+                                        <option>Catégorie 3</option>
+                                        <option>Catégorie 4</option>
+                                        <option>Catégorie 5</option>
+                                        <option>Catégorie 1</option>
+                                        <option>Catégorie 2</option>
+                                        <option>Catégorie 3</option>
+                                        <option>Catégorie 4</option>
+                                        <option>Catégorie 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col location">
+                                <strong class="title"> <label for="location">Votre lieu :</label> </strong>
+
+                                <div class="field-holder">
+                                    <input type="text" placeholder="France" id="location" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col time datepicker-holder">
+                                <div class="col">
+                                    <strong class="title"><label for="start">Début :</label></strong>
+
+                                    <div class="input-append date field-holder">
+                                        <input type="text" class="form-control from"
+                                               placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/" id="start">
+                                        <span class="add-on">
+                                            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <strong class="title"><label for="end">Fin :</label></strong>
+
+                                    <div class="input-append date field-holder">
+                                        <input type="text" class="form-control to"
+                                               placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/" id="end">
+                                        <span class="add-on">
+                                            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Rechercher" class="btn btn-default">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- two-columns -->
+            <div class="twocolumns row alt">
+                <!-- contain the main content of the page -->
+                <div id="content" class="ad-area col-xs-12 col-md-9">
+                    <div class="content-holder">
+                        <!-- alert -->
+                        <div role="alert" class="alert alert-success">
+                            <i class="ico lock">lock</i>
+
+                            <p>Cette page est sécurisée par le moyen d'un cryptage <strong>AES 256 bits.</strong></p>
+                        </div>
+                        <!-- schedule -->
+                        <div class="price-area">
+                            <ul class="list-inline timing">
+                                <li>Début
+                                    <time datetime="2014-02-24"><i class="icon-calendar"></i> 24/02/2014</time>
+                                </li>
+                                <li>Fin
+                                    <time datetime="2014-02-28"><i class="icon-calendar"></i> 28/02/2014</time>
+                                </li>
+                                <li>Total : <strong>4</strong> unité de temps</li>
+                            </ul>
+                            <ul class="list-inline price-list">
+                                <li>Montant de la réservation: <strong>285.00€</strong>
+                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                            data-placement="right" data-toggle="tooltip" class="tooltip-button"
+                                            type="button"
+                                            data-original-title="Au survol de la souris, des informations complémentaires apparaissent.">
+                                        ?
+                                    </button>
+                                </li>
+                                <li>Commission: <strong>28.50€</strong>
+                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                            data-placement="right" data-toggle="tooltip" class="tooltip-button"
+                                            type="button"
+                                            data-original-title="Au survol de la souris, des informations complémentaires apparaissent.">
+                                        ?
+                                    </button>
+                                </li>
+                            </ul>
+                            <strong class="total">Total: 313.50€</strong>
+                        </div>
+                        <!-- form-signup -->
+                        <form action="#" class="form-signup validate-form alt">
+                            <fieldset>
+                                <legend class="hidden">form-signup</legend>
+                                <div role="tabpanel">
+                                    <!-- Nav tabs -->
+                                    <nav class="tabset-holder">
+                                        <a href="#" class="opener">
+                                            <span class="hidden">opener</span>
+                                            <i class="icon-down-open-mini"></i></a>
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home"
+                                                                                      role="tab" data-toggle="tab"
+                                                                                      data-text="Créer un compte">Créer
+                                                un compte</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile"
+                                                                       role="tab" data-toggle="tab"
+                                                                       data-text="S'identifier (J'ai déjà un compte)">S'identifier
+                                                (J'ai déjà un compte)</a></li>
+                                        </ul>
+                                    </nav>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">
+                                            <div class="tab-holder">
+                                                <div class="column">
+                                                    <h3>Inscription classique</h3>
+
+                                                    <div class="field-row validate-row">
+                                                        <span class="label"><label for="name">Nom : *</label></span>
+                                                        <div class="field-holder">
+                                                            <input type="text" id="name" class="form-control required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-row validate-row">
+                                                        <span class="label"><label for="first-name">Prénom : *</label>
+                                                        </span>
+                                                        <div class="field-holder">
+                                                            <input type="text" id="first-name"
+                                                                   class="form-control  required">
+                                                        </div>
+                                                    </div>
+                                                    <div class="field-row validate-row">
+                                                        <span class="label"><label for="email">Email : *</label></span>
+                                                        <div class="field-holder">
+                                                            <input type="email" id="email"
+                                                                   class="form-control required-email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="confirm-row">
+                                                        <div class="field-row validate-row">
+                                                            <span class="label"><label for="password">Mot de passe
+                                                                :*</label></span>
+                                                            <div class="field-holder">
+                                                                <input type="password" id="password"
+                                                                       class="form-control required">
+                                                            </div>
+                                                        </div>
+                                                        <div class="field-row validate-row">
+                                                            <span class="label"><label for="confirm-password">Confirmation
+                                                                :*</label></span>
+                                                            <div class="field-holder">
+                                                                <input type="password" id="confirm-password"
+                                                                       class="form-control required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="column">
+                                                    <h3>ou s'inscrire avec son compte Facebook</h3>
+                                                    <a href="#" class="btn-facebook"><i class="icon-facebook"></i>S’inscrire
+                                                        avec <strong>Facebook</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="profile">
+                                            <h3>Heading of second tab</h3>
+
+                                            <p>content of second tabe will be placed here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" class="hidden" value="submit">
+                            </fieldset>
+                        </form>
+                        <!-- form verification -->
+                        <form action="#" class="form-verification validate-form">
+                            <fieldset>
+                                <legend class="hidden">form-verification</legend>
+                                <h2>Vérification d'identité</h2>
+
+                                <p>Sed porta ut augue nec porttitor. In nec sollicitudin sapien. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur
+                                    scelerisque cursus orci, non pretium libero tempus non. Phasellus et quam ac sapien
+                                    tincidunt mollis in vel massa.</p>
+
+                                <div class="form-holder">
+                                    <div class="field-row">
+                                        <div class="col validate-row">
+                                            <span class="label"><label for="verification-name">Nom :*</label></span>
+                                            <div class="field-holder">
+                                                <input type="text" id="verification-name" class="form-control required">
+                                            </div>
+                                        </div>
+                                        <div class="col validate-row">
+                                            <span class="label"><label for="verification-first-name">Prénom :*</label>
+                                            </span>
+                                            <div class="field-holder">
+                                                <input type="text" id="verification-first-name"
+                                                       class="form-control required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field-row date-row">
+                                        <div class="col validate-row">
+                                            <span class="label">Date de naissance :*</span>
+                                            <div class="field-holder">
+                                                <div class="field-day">
+                                                    <input type="text" placeholder="Jour"
+                                                           class="form-control required dark-color"
+                                                           title="title goes here">
+                                                </div>
+                                                <div class="field-month">
+                                                    <select class="no-arrow required-select dark-color" title="month">
+                                                        <option>Mois</option>
+                                                        <option>January</option>
+                                                        <option>Feburary</option>
+                                                        <option>March</option>
+                                                        <option>April</option>
+                                                        <option>May</option>
+                                                        <option>Jun</option>
+                                                        <option>July</option>
+                                                        <option>August</option>
+                                                        <option>September</option>
+                                                        <option>October</option>
+                                                        <option>November</option>
+                                                        <option>December</option>
+                                                    </select>
+                                                </div>
+                                                <div class="field-year">
+                                                    <input type="text" placeholder="Année"
+                                                           class="form-control required dark-color" title="field title">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <span class="label"><label for="nationality">Nationnalité :*</label></span>
+                                            <div class="field-holder validate-row">
+                                                <select class="no-arrow required-select dark-color" id="nationality">
+                                                    <option>France</option>
+                                                    <option>France</option>
+                                                    <option>France</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="note">
+                                    <p>Le porteur de la carte doit avoir plus de 18 ans pour faire une réservation.
+                                        Veuillez être précis, vous ne serez pas en mesure de changer votre date de
+                                        naissance.</p>
+                                </div>
+                                <input type="submit" class="hidden" value="submit">
+                            </fieldset>
+                        </form>
+                        <form action="#" class="form-message">
+                            <fieldset>
+                                <legend class="hidden">form-message</legend>
+                                <h2><label for="message">Message au FOURNISSEUR</label></h2>
+
+                                <div class="no-scroll">
+                                    <textarea id="message"
+                                              placeholder="Vous pouvez envoyer un message à votre FOURNISSEUR."></textarea>
+                                </div>
+                                <input type="submit" class="hidden" value="submit">
+                            </fieldset>
+                        </form>
+                        <!-- payment-method -->
+                        <form action="#" class="form-payment">
+                            <fieldset>
+                                <legend class="hidden">form-payment</legend>
+                                <div class="head">
+                                    <h2>Saisie carte bancaire</h2>
+
+                                    <div class="by">
+                                        <em class="title">Powered by</em>
+                                        <ul class="list-inline">
+                                            <li><img src="images/mango-pay.png" alt="MangoPay"></li>
+                                            <li><img src="images/paypal.png" alt="payline"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Absolument aucun prélèvement sera fait sur votre carte tant que l'offreur n'a pas
+                                    accepté votre demande. A aucun moment votre numéro de carte est stocké chez nous.
+                                    Cette page est sécurisée par le moyen d'un cryptage AES 256 bits.</p>
+
+                                <div class="card-type">
+                                    <span class="title">Type de carte:*</span>
+                                    <ul class="cards-list list-inline">
+                                        <li>
+                                            <label for="visa">
+                                                <span class="hidden">visa</span>
+                                                <input type="radio" id="visa" name="payment" title="visa card">
+                                                <img src="images/card-visa.png" alt="visa card" class="img">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="master">
+                                                <span class="hidden">master card</span>
+                                                <input type="radio" id="master" name="payment" title="master card">
+                                                <img src="images/card-master.png" alt="master card" class="img">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="cb">
+                                                <span class="hidden">cb card</span>
+                                                <input type="radio" id="cb" name="payment" title="cb card">
+                                                <img src="images/card-cb.png" alt="visa cb" class="img">
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-holder">
+                                    <div class="col">
+                                        <span class="label"><label for="number">Numéro de carte:*</label></span>
+                                        <div class="field-holder">
+                                            <input type="text" id="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col expiry">
+                                        <span class="label"><label for="expiry">Date d'expiration:*</label></span>
+                                        <div class="field-holder">
+                                            <div class="col">
+                                                <select title="&nbsp;" class="no-arrow months-list" id="expiry">
+                                                    <option>Mois*</option>
+                                                    <option>Janvier</option>
+                                                    <option>Février</option>
+                                                    <option>Mars</option>
+                                                    <option>Avril</option>
+                                                    <option>Mai</option>
+                                                    <option>Juin</option>
+                                                    <option>Juillet</option>
+                                                    <option>Août</option>
+                                                    <option>Septembre</option>
+                                                    <option>Octobre</option>
+                                                    <option>Novembre</option>
+                                                    <option>Décembre</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <input type="number" min="1" title="&nbsp;" placeholder="Année*">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col cvv">
+                                        <span class="label"><label for="cvv">CVV:*</label>
+                                            <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                    data-placement="right" data-toggle="tooltip" class="tooltip-button"
+                                                    type="button"
+                                                    data-original-title="Au survol de la souris, des informations complémentaires apparaissent.">
+                                                ?
+                                            </button>
+                                        </span>
+                                        <div class="field-holder">
+                                            <input type="text" id="cvv" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" class="hidden" value="submit">
+                            </fieldset>
+                        </form>
+                        <div class="btns-area">
+                            <div class="agreement">
+                                <input type="checkbox" id="agree">
+                                <span class="label"><label for="agree" class="jcf-label-active">J'accepte les conditions
+                                    d'utilisation</label></span>
+                            </div>
+                            <input type="submit" value="Valider la réservation" class="btn btn-primary">
+                        </div>
+                    </div>
+                </div>
+                <!-- contain sidebar of the page -->
+                <aside id="sidebar" class="col-xs-12 col-md-3">
+                    <div class="holder">
+                        <!-- widget article -->
+                        <section class="widget article">
+                            <div class="img-holder">
+                                <img src="images/img5.png" alt="image descriptoin">
+                            </div>
+                            <h1>Dites bonjour à votre Fournisseur</h1>
+
+                            <div class="author-area">
+                                <img src="images/img2.png" alt="image description" class="author-img">
+
+                                <div class="textbox">
+                                    <span class="author-name"><a href="#">Barbie &amp; Ken</a></span>
+                                    <!-- rating -->
+                                    <ul class="rating list-inline">
+                                        <li><a class="icon-star" href="#">
+                                            <span class="hide">1</span>
+                                        </a></li>
+                                        <li><a class="icon-star" href="#">
+                                            <span class="hide">2</span>
+                                        </a></li>
+                                        <li><a class="icon-star" href="#">
+                                            <span class="hide">3</span>
+                                        </a></li>
+                                        <li><a class="icon-star" href="#">
+                                            <span class="hide">4</span>
+                                        </a></li>
+                                        <li><a class="icon-star" href="#">
+                                            <span class="hide">5</span>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- info-list -->
+                            <ul class="info-list">
+                                <li>
+                                    Catégorie:
+                                    <strong>Lorem ipsum </strong>
+                                </li>
+                                <li>
+                                    Lieu:
+                                    <strong>Paris, France</strong>
+                                </li>
+                                <li>
+                                    Politique d'annulation:
+                                    <strong>Stricte</strong>
+                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                            data-placement="right" data-toggle="tooltip" class="tooltip-button"
+                                            type="button"
+                                            data-original-title="Au survol de la souris, des informations complémentaires apparaissent.">
+                                        ?
+                                    </button>
+                                </li>
+                                <li>
+                                    <strong>Règles :</strong> Morbi tincidunt egestas porttitor. Nullam sed luctus mi.
+                                    Integer lacinia urna nec velit fermentum, eu malesuada sapien mattis. Praesent
+                                    ultrices leo vitae nunc tincidunt varius. Nunc varius dignissim elit non rhoncus.
+                                    Morbi iaculis congue dapibus.
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!-- bottom-container -->
+    <div class="bottom-container">
+        <!-- footer-aside -->
+        <aside class="aside-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- contact-info -->
+                        <div class="contact-info pull-right">
+                            <strong class="title">Nous contacter</strong>
+                            <strong class="hidden" itemscope itemtype="http://schema.org/Organization">Site
+                                name</strong>
+                            <ul class="list-unstyled" itemscope itemtype="http://schema.org/Organization">
+                                <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <address><i class="icon-location"></i>00, Lorem ipsum dolor</address>
+                                </li>
+                                <li itemprop="telephone"><a href="tel:33010000000"><i class="icon-phone"></i>+33(0) 1 00
+                                    00 00 00</a></li>
+                                <li itemprop="email"><a
+                                        href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><i
+                                        class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!-- navarea -->
+                        <nav class="navarea">
+                            <ul class="list-unstyled pull-left">
+                                <li>À PROPOS</li>
+                                <li><a href="#">Qui sommes-nous?</a></li>
+                                <li><a href="#">Comment &ccedil;a marche?</a></li>
+                                <li><a href="#">L'&eacute;quipe</a></li>
+                            </ul>
+                            <ul class="list-unstyled pull-left">
+                                <li>AIDE &amp; CONTACT</li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- footer of the page -->
+        <footer id="footer" class="container text-center">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#" class="by pull-right">Mentions légales</a>
+
+                    <p>&copy; 2015 Tous droits reserves <a href="#">LOGOTYPE</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="loader">
+    <span class="hidden">loader</span>
+</div>
+<!-- allow a user to go to the top of the page -->
+<div class="skip">
+    <a href="#header">back to top</a>
+</div>
+<!-- include jQuery library -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<!-- include custom JavaScript -->
+<script type="text/javascript" src="js/jquery.main.js"></script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+<script type="text/javascript">
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+                document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                )
+        )
+        document.querySelector('head').appendChild(msViewportStyle)
+    }
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+<noscript>Javascript must be enabled for the correct page display</noscript>
+</body>
+</html>
