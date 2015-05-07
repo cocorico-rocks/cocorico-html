@@ -119,8 +119,9 @@
                 <!-- breadcrumbs -->
                 <ol class="breadcrumb col-xs-12">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Fournisseur</a></li>
-                    <li>Mes paiements</li>
+                    <li><a href="#">Demandeur</a></li>
+                    <li><a href="#">Commentaires</a></li>
+                    <li>Commentaire "Titre de l'annonce"</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -132,8 +133,8 @@
                                 <legend class="hidden">formswitchers</legend>
                                 <span class="title"><label for="applicant">Demandeur (2)</label></span>
                                 <div class="radio-holder">
-                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;">
-                                    <input type="radio" name="radio-switcher" id="provider" title="&nbsp;" checked>
+                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;" checked>
+                                    <input type="radio" name="radio-switcher" id="provider" title="&nbsp;">
                                 </div>
                                 <strong class="counter"><label for="provider">Fournisseur (1)</label></strong>
                                 <input type="submit" class="hidden">
@@ -147,150 +148,98 @@
                             <ul class="nav nav-tabs" role="tablist">
                                 <li><a href="#" data-text="Messagerie">Messagerie</a></li>
                                 <li><a href="#" data-text="Mes reservations">Mes reservations</a></li>
-                                <li><a href="#" data-text="Mes annonces">Mes annonces</a></li>
-                                <li class="active"><a href="#" data-text="Mes paiements">Mes paiements</a></li>
-                                <li><a href="#" data-text="Commentaires">Commentaires</a></li>
+                                <li><a href="#" data-text="Mes factures">Mes factures</a></li>
+                                <li class="active"><a href="#" data-text="Commentaires">Commentaires</a></li>
                                 <li><a href="#" data-text="Mon profil">Mon profil</a></li>
                             </ul>
                         </nav>
                         <!-- tab-content -->
-                        <div class="tab-content no-border table-section">
+                        <div class="tab-content no-border">
                             <!-- reservations -->
-                            <div role="tabpanel" class="tab-pane active">
-                                <!-- table -->
-                                <table class="table table-detail alt" title="table">
-                                    <thead>
-                                    <tr>
-                                        <th class="col1">N° de réservation</th>
-                                        <th class="col2">Date de paiement en votre faveur</th>
-                                        <th class="col3">Montant</th>
-                                        <th class="col4">Statut</th>
-                                        <th class="col6">Facture</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="col1" data-label="N° de réservation">
-                                            <div>NJOQ88J</div>
-                                        </td>
-                                        <td class="col2" data-label="Date de paiement en votre faveur">
-                                            <div>-</div>
-                                        </td>
-                                        <td class="col3" data-label="Montant">
-                                            <div>52.06€</div>
-                                        </td>
-                                        <td class="col5" data-label="Status">
-                                            <div>
-                                                <span class="text">En attente</span>
-                                                <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                        data-placement="right" data-toggle="tooltip"
-                                                        class="tooltip-button" type="button">?
-                                                </button>
+                            <div role="tabpanel" class="tab-pane active table-section">
+                                <!-- postarea -->
+                                <form action="#" class="form-message alt2">
+                                    <fieldset>
+                                        <legend class="hidden">message form</legend>
+                                        <div class="post-area">
+                                            <div class="img-holder"><a href="#"><img alt="image description"
+                                                                                     src="images/img15.png"></a></div>
+                                            <div class="area">
+                                                <h2><a href="#">Titre de l'annonce</a></h2>
+
+                                                <p>La personne que vous notez: <a href="#">Anthoni N</a></p>
+                                                <ul class="list-inline booking-detail">
+                                                    <li>Date de debut:
+                                                        <time datetime="2015-05-12">12/05/2015</time>
+                                                    </li>
+                                                    <li>Date de fin :
+                                                        <time datetime="2015-05-02">20/05/2015</time>
+                                                    </li>
+                                                </ul>
+                                                <div class="average-rating">
+                                                    <span class="title">Note moyenne :</span>
+                                                    <ul class="list-inline rating">
+                                                        <li>
+                                                            <span class="icon-star">
+                                                                <span class="hide">1</span>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon-star">
+                                                                <span class="hide">2</span>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon-star">
+                                                                <span class="hide">3</span>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon-star">
+                                                                <span class="hide">4</span>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon-star">
+                                                                <span class="hide">5</span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                        </td>
-                                        <td class="col6" data-label="Facture">
-                                            <div>-</div>
-                                        </td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td class="col1" data-label="N° de réservation">
-                                            <div>KJNAPA9</div>
-                                        </td>
-                                        <td class="col2" data-label="Date de paiement en votre faveur">
-                                            <div>
-                                                <time datetime="2016-20-02">20/02/2016</time>
-                                            </div>
-                                        </td>
-                                        <td class="col3" data-label="Montant">
-                                            <div>85.36€</div>
-                                        </td>
-                                        <td class="col5" data-label="Status">
-                                            <div>
-                                                <span class="text">Payé</span>
-                                                <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                        data-placement="right" data-toggle="tooltip"
-                                                        class="tooltip-button" type="button">?
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="col6" data-label="Facture">
-                                            <div><a class="icon-pdf" href="#"><img alt="pdf" src="images/icon-pdf.png"></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col1" data-label="N° de réservation">
-                                            <div>KJNAPA9</div>
-                                        </td>
-                                        <td class="col2" data-label="Date de paiement en votre faveur">
-                                            <div>-</div>
-                                        </td>
-                                        <td class="col3" data-label="Montant">
-                                            <div>122.00€</div>
-                                        </td>
-                                        <td class="col5" data-label="Status">
-                                            <div>
-                                                <span class="text">Info manquante</span>
-                                                <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                        data-placement="right" data-toggle="tooltip"
-                                                        class="tooltip-button" type="button">?
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="col6" data-label="Facture">
-                                            <div>-</div>
-                                        </td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td class="col1" data-label="N° de réservation">
-                                            <div>KJNAPA9</div>
-                                        </td>
-                                        <td class="col2" data-label="Date de paiement en votre faveur">
-                                            <div>-</div>
-                                        </td>
-                                        <td class="col3" data-label="Montant">
-                                            <div>85.36€</div>
-                                        </td>
-                                        <td class="col5" data-label="Status">
-                                            <div>
-                                                <span class="text">Annulé</span>
-                                                <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                        data-placement="right" data-toggle="tooltip"
-                                                        class="tooltip-button" type="button">?
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="col6" data-label="Facture">
-                                            <div><a class="icon-pdf" href="#"><img alt="pdf" src="images/icon-pdf.png"></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col1" data-label="N° de réservation">
-                                            <div>KJNAPA9</div>
-                                        </td>
-                                        <td class="col2" data-label="Date de paiement en votre faveur">
-                                            <div>-</div>
-                                        </td>
-                                        <td class="col3" data-label="Montant">
-                                            <div>52.06€</div>
-                                        </td>
-                                        <td class="col5" data-label="Status">
-                                            <div>
-                                                <span class="text">Annulé</span>
-                                                <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                        data-placement="right" data-toggle="tooltip"
-                                                        class="tooltip-button" type="button">?
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td class="col6" data-label="Facture">
-                                            <div><a class="icon-pdf" href="#"><img alt="pdf" src="images/icon-pdf.png"></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                        </div>
+                                        <div class="user-rating">
+                                            <strong class="title">Noter cet utilisateur:</strong>
+                                            <ul class="list-inline rating star-rating">
+                                                <li class="active"><a href="#" class="one-star">
+                                                    <span class="hide">1</span>
+                                                </a></li>
+                                                <li><a href="#" class="two-stars">
+                                                    <span class="hide">2</span>
+                                                </a></li>
+                                                <li><a href="#" class="three-stars">
+                                                    <span class="hide">3</span>
+                                                </a></li>
+                                                <li><a href="#" class="four-stars">
+                                                    <span class="hide">4</span>
+                                                </a></li>
+                                                <li><a href="#" class="five-stars">
+                                                    <span class="hide">5</span>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                        <h3><label for="comment">Votre commentaire:</label></h3>
+
+                                        <div class="no-scroll">
+                                            <textarea id="comment"
+                                                      placeholder="Soyez poli, penser à la façon dont votre avis peut aider les autres à se faire une opinion."></textarea>
+                                        </div>
+                                        <div class="btn-block text-center">
+                                            <input type="reset" class="btn btn-default" value="Annuler">
+                                            <input type="submit" class="btn btn-default" value="Publier ce commentaire">
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>

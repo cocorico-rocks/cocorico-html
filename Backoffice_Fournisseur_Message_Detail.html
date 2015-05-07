@@ -119,9 +119,9 @@
                 <!-- breadcrumbs -->
                 <ol class="breadcrumb col-xs-12">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Demandeur</a></li>
-                    <li><a href="#">Commentaires</a></li>
-                    <li>Commentaire "Titre de l'annonce"</li>
+                    <li><a href="#">Fournisseur</a></li>
+                    <li><a href="#">Messagerie</a></li>
+                    <li>discussion avec Anthoni N.</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -133,8 +133,8 @@
                                 <legend class="hidden">formswitchers</legend>
                                 <span class="title"><label for="applicant">Demandeur (2)</label></span>
                                 <div class="radio-holder">
-                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;" checked>
-                                    <input type="radio" name="radio-switcher" id="provider" title="&nbsp;">
+                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;">
+                                    <input type="radio" name="radio-switcher" id="provider" checked title="&nbsp;">
                                 </div>
                                 <strong class="counter"><label for="provider">Fournisseur (1)</label></strong>
                                 <input type="submit" class="hidden">
@@ -146,100 +146,132 @@
                                 <span class="hidden">opener</span>
                                 <i class="icon-down-open-mini"></i></a>
                             <ul class="nav nav-tabs" role="tablist">
-                                <li><a href="#" data-text="Messagerie">Messagerie</a></li>
+                                <li class="active"><a href="#" data-text="Messagerie">Messagerie</a></li>
                                 <li><a href="#" data-text="Mes reservations">Mes reservations</a></li>
-                                <li><a href="#" data-text="Mes factures">Mes factures</a></li>
-                                <li class="active"><a href="#" data-text="Commentaires">Commentaires</a></li>
+                                <li><a href="#" data-toggle="tab" data-text="Mes annonces">Mes annonces</a></li>
+                                <li><a href="#" data-text="Mes paiements">Mes paiements</a></li>
+                                <li><a href="#" data-text="Commentaires">Commentaires</a></li>
                                 <li><a href="#" data-text="Mon profil">Mon profil</a></li>
                             </ul>
                         </nav>
                         <!-- tab-content -->
                         <div class="tab-content no-border">
-                            <!-- reservations -->
-                            <div role="tabpanel" class="tab-pane active table-section">
-                                <!-- postarea -->
-                                <form action="#" class="form-message alt2">
+                            <!-- messaging -->
+                            <div role="tabpanel" class="tab-pane active" id="messaging">
+                                <!-- form-ad-detail -->
+                                <form action="#" class="form-ad-detail">
                                     <fieldset>
-                                        <legend class="hidden">message form</legend>
-                                        <div class="post-area">
-                                            <div class="img-holder"><a href="#"><img alt="image description"
-                                                                                     src="images/img15.png"></a></div>
+                                        <legend class="hidden">form-ad-detail</legend>
+                                        <div class="ad-detail">
                                             <div class="area">
-                                                <h2><a href="#">Titre de l'annonce</a></h2>
+                                                <div class="img-holder">
+                                                    <img src="images/img15.png" alt="image description">
+                                                </div>
+                                                <div class="box">
+                                                    <strong class="ad-title">Titre de l’annonce</strong>
 
-                                                <p>La personne que vous notez: <a href="#">Anthoni N</a></p>
-                                                <ul class="list-inline booking-detail">
-                                                    <li>Date de debut:
-                                                        <time datetime="2015-05-12">12/05/2015</time>
-                                                    </li>
-                                                    <li>Date de fin :
-                                                        <time datetime="2015-05-02">20/05/2015</time>
-                                                    </li>
-                                                </ul>
-                                                <div class="average-rating">
-                                                    <span class="title">Note moyenne :</span>
-                                                    <ul class="list-inline rating">
-                                                        <li>
-                                                            <span class="icon-star">
-                                                                <span class="hide">1</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="icon-star">
-                                                                <span class="hide">2</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="icon-star">
-                                                                <span class="hide">3</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="icon-star">
-                                                                <span class="hide">4</span>
-                                                            </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="icon-star">
-                                                                <span class="hide">5</span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="author-detail">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author description">
+                                                        </div>
+                                                        <div class="box">
+                                                            <strong class="author-name">Demandeur : <a href="#">Anthoni
+                                                                N.</a></strong>
+                                                            <!-- rating -->
+                                                            <ul class="rating list-inline">
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="btn-block text-center hidden">
+                                                <a href="#" class="btn btn-primary">Réserver cette location</a>
+                                            </div>
                                         </div>
-                                        <div class="user-rating">
-                                            <strong class="title">Noter cet utilisateur:</strong>
-                                            <ul class="list-inline rating star-rating">
-                                                <li class="active"><a href="#" class="one-star">
-                                                    <span class="hide">1</span>
-                                                </a></li>
-                                                <li><a href="#" class="two-stars">
-                                                    <span class="hide">2</span>
-                                                </a></li>
-                                                <li><a href="#" class="three-stars">
-                                                    <span class="hide">3</span>
-                                                </a></li>
-                                                <li><a href="#" class="four-stars">
-                                                    <span class="hide">4</span>
-                                                </a></li>
-                                                <li><a href="#" class="five-stars">
-                                                    <span class="hide">5</span>
-                                                </a></li>
-                                            </ul>
+                                        <div class="textarea-holder no-scroll">
+                                            <textarea placeholder="écrire votre message"
+                                                      title="your message"></textarea>
                                         </div>
-                                        <h3><label for="comment">Votre commentaire:</label></h3>
-
-                                        <div class="no-scroll">
-                                            <textarea id="comment"
-                                                      placeholder="Soyez poli, penser à la façon dont votre avis peut aider les autres à se faire une opinion."></textarea>
-                                        </div>
-                                        <div class="btn-block text-center">
-                                            <input type="reset" class="btn btn-default" value="Annuler">
-                                            <input type="submit" class="btn btn-default" value="Publier ce commentaire">
-                                        </div>
+                                        <div class="btn-block text-center"><input type="submit" class="btn btn-default"
+                                                                                  value="Envoyer"></div>
                                     </fieldset>
                                 </form>
+                                <!-- blog -->
+                                <div class="blog">
+                                    <div class="posts-holder">
+                                        <!-- post -->
+                                        <article class="post">
+                                            <header class="head">
+                                                <div class="author-img">
+                                                    <div class="img-holder">
+                                                        <img alt="Pierre" src="images/img2.png">
+                                                    </div>
+                                                    <a class="author-name" href="#"><strong>Anthoni N.</strong></a>
+                                                </div>
+                                                <div class="meta">
+                                                    <span class="title">Hello!</span>
+                                                    <time datetime="2014-02-24">24/02/2014</time>
+                                                </div>
+                                            </header>
+                                            <div class="post-content">
+                                                <p>Phasellus sapien tellus, dapibus id commodo sed, laoreet lacinia
+                                                    sapien. Massa mauris, pulvinar nec elit eget, congue hendrerit
+                                                    tellus.</p>
+                                            </div>
+                                            <footer class="footer">
+                                                <span class="time"><i class="icon-clock"></i>15h03 GMT</span>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post">
+                                            <header class="head">
+                                                <div class="author-img">
+                                                    <div class="img-holder">
+                                                        <img alt="Lucie" src="images/img2.png">
+                                                    </div>
+                                                    <a class="author-name" href="#"><strong>Vous</strong></a>
+                                                </div>
+                                                <div class="meta">
+                                                    <span class="title">Hello!</span>
+                                                    <time datetime="2014-02-24">24/02/2014</time>
+                                                </div>
+                                            </header>
+                                            <div class="post-content">
+                                                <p>Phasellus sapien tellus, dapibus id commodo sed, laoreet lacinia
+                                                    sapien. Massa mauris, pulvinar nec elit eget, congue hendrerit
+                                                    tellus.</p>
+                                            </div>
+                                            <footer class="footer">
+                                                <span class="time"><i class="icon-clock"></i>15h03 GMT</span>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -120,8 +120,7 @@
                 <ol class="breadcrumb col-xs-12">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Demandeur</a></li>
-                    <li><a href="#">Mes reservations</a></li>
-                    <li>N° de réservation : 215423541B</li>
+                    <li>Messagerie</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -133,8 +132,8 @@
                                 <legend class="hidden">formswitchers</legend>
                                 <span class="title"><label for="applicant">Demandeur (2)</label></span>
                                 <div class="radio-holder">
-                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;" checked>
-                                    <input type="radio" name="radio-switcher" id="provider" title="&nbsp;">
+                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;">
+                                    <input type="radio" name="radio-switcher" id="provider" checked title="&nbsp;">
                                 </div>
                                 <strong class="counter"><label for="provider">Fournisseur (1)</label></strong>
                                 <input type="submit" class="hidden">
@@ -146,8 +145,8 @@
                                 <span class="hidden">opener</span>
                                 <i class="icon-down-open-mini"></i></a>
                             <ul class="nav nav-tabs" role="tablist">
-                                <li><a href="#" data-text="Messagerie">Messagerie</a></li>
-                                <li class="active"><a href="#" data-text="Mes reservations">Mes reservations</a></li>
+                                <li class="active"><a href="#" data-text="Messagerie">Messagerie</a></li>
+                                <li><a href="#" data-text="Mes reservations">Mes reservations</a></li>
                                 <li><a href="#" data-text="Mes annonces">Mes factures</a></li>
                                 <li><a href="#" data-text="Commentaires">Commentaires</a></li>
                                 <li><a href="#" data-text="Mon profil">Mon profil</a></li>
@@ -155,10 +154,13 @@
                         </nav>
                         <!-- tab-content -->
                         <div class="tab-content no-border">
-                            <!-- reservations -->
+                            <!-- messaging -->
                             <div role="tabpanel" class="tab-pane active" id="messaging">
                                 <!-- postarea -->
-                                <section class="postarea alt2">
+                                <section class="postarea">
+                                    <header class="section-head">
+                                        <span class="result-counter">352 résultats</span>
+                                    </header>
                                     <div class="posts-holder">
                                         <!-- post -->
                                         <article class="post">
@@ -169,30 +171,12 @@
                                                 <div class="area">
                                                     <header class="head">
                                                         <div class="area">
-                                                            <h2><a href="#">Titre de l'annonce</a></h2>
+                                                            <h2><a href="#">Titre du message</a></h2>
+                                                            <time datetime="2014-02-25">Date: 25/02/2014</time>
                                                         </div>
                                                         <div class="meta">
-                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
-                                                                B</strong></span>
-                                                        </div>
-                                                        <div class="booking-detail">
-                                                            <ul class="list-inline">
-                                                                <li>Date de debut:
-                                                                    <time datetime="2015-05-12">12/05/2015</time>
-                                                                </li>
-                                                                <li>Date de fin :
-                                                                    <time datetime="2015-05-02">20/05/2015</time>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </header>
-                                                    <div class="post-content">
-                                                        <div class="author-img">
-                                                            <img src="images/img2.png" alt="author-description">
-                                                        </div>
-                                                        <div class="textbox">
-                                                            <span class="author-info">Demandeur : <strong>Anthoni
-                                                                N.</strong></span>
+                                                            <p>Personne avec qui vous discutez: <strong>Anthoni
+                                                                N.</strong></p>
                                                             <ul class="rating list-inline">
                                                                 <li>
                                                                     <span class="icon-star">
@@ -221,112 +205,225 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <p><strong>Anthoni N. dit:</strong> ed tempus ante поп metus
+                                                            ultricies vestibulum. Vestibulum eget ulti ices nunc, пес
+                                                            feugiat purus. Quisque non urna et lectus tempor aliquam.
+                                                            Maecenas vitae lacus posuere, egestas est sed, fringilla
+                                                            lectus. Interdum et malesuada fames ac ante ipsum primis in
+                                                            faucibus.. <a href="#">[En lire plus]</a></p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <footer class="footer">
-                                                <strong class="price">
-                                                    <span>422,00€</span>
-                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                            data-placement="right" data-toggle="tooltip"
-                                                            class="tooltip-button" type="button">?
-                                                    </button>
-                                                </strong>
-                                                <strong class="booking-duration">Duree de la reservation :
-                                                    <span class="normal-text">4</span>
-                                                </strong>
-                                                <span class="btn btn-algae-green">Statut: Accepté &amp; payé</span>
+                                                <a href="#" class="btn btn-default">R&eacute;pondre</a>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                                <a href="#" class="btn btn-default">Supprimer</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post">
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"></a>
+                                                </div>
+                                                <div class="area">
+                                                    <header class="head">
+                                                        <div class="area">
+                                                            <h2><a href="#">Titre du message</a></h2>
+                                                            <time datetime="2014-02-25">Date: 25/02/2014</time>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <p>Personne avec qui vous discutez: <strong>Anthoni
+                                                                N.</strong></p>
+                                                            <ul class="rating list-inline">
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <p><strong>Anthoni N. dit:</strong> ed tempus ante поп metus
+                                                            ultricies vestibulum. Vestibulum eget ulti ices nunc, пес
+                                                            feugiat purus. Quisque non urna et lectus tempor aliquam.
+                                                            Maecenas vitae lacus posuere, egestas est sed, fringilla
+                                                            lectus. Interdum et malesuada fames ac ante ipsum primis in
+                                                            faucibus.. <a href="#">[En lire plus]</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <a href="#" class="btn btn-default">R&eacute;pondre</a>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                                <a href="#" class="btn btn-default">Supprimer</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post">
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"></a>
+                                                </div>
+                                                <div class="area">
+                                                    <header class="head">
+                                                        <div class="area">
+                                                            <h2><a href="#">Titre du message</a></h2>
+                                                            <time datetime="2014-02-25">Date: 25/02/2014</time>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <p>Personne avec qui vous discutez: <strong>Anthoni
+                                                                N.</strong></p>
+                                                            <ul class="rating list-inline">
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <p><strong>Anthoni N. dit:</strong> ed tempus ante поп metus
+                                                            ultricies vestibulum. Vestibulum eget ulti ices nunc, пес
+                                                            feugiat purus. Quisque non urna et lectus tempor aliquam.
+                                                            Maecenas vitae lacus posuere, egestas est sed, fringilla
+                                                            lectus. Interdum et malesuada fames ac ante ipsum primis in
+                                                            faucibus.. <a href="#">[En lire plus]</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <a href="#" class="btn btn-default">R&eacute;pondre</a>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                                <a href="#" class="btn btn-default">Supprimer</a>
+                                            </footer>
+                                        </article>
+                                        <!-- post -->
+                                        <article class="post">
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"></a>
+                                                </div>
+                                                <div class="area">
+                                                    <header class="head">
+                                                        <div class="area">
+                                                            <h2><a href="#">Titre du message</a></h2>
+                                                            <time datetime="2014-02-25">Date: 25/02/2014</time>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <p>Personne avec qui vous discutez: <strong>Anthoni
+                                                                N.</strong></p>
+                                                            <ul class="rating list-inline">
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">1</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">2</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">3</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">4</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="icon-star">
+                                                                        <span class="hide">5</span>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <p><strong>Anthoni N. dit:</strong> ed tempus ante поп metus
+                                                            ultricies vestibulum. Vestibulum eget ulti ices nunc, пес
+                                                            feugiat purus. Quisque non urna et lectus tempor aliquam.
+                                                            Maecenas vitae lacus posuere, egestas est sed, fringilla
+                                                            lectus. Interdum et malesuada fames ac ante ipsum primis in
+                                                            faucibus.. <a href="#">[En lire plus]</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="footer">
+                                                <a href="#" class="btn btn-default">R&eacute;pondre</a>
+                                                <a href="#" class="btn btn-default">Ouvrir</a>
+                                                <a href="#" class="btn btn-default">Supprimer</a>
                                             </footer>
                                         </article>
                                     </div>
-                                    <div class="location-holder" itemscope itemtype="http://schema.org/Organization">
-                                        <div class="contact-info">
-                                            <strong class="title">Information de contact du fournisseur:</strong>
-                                            <dl>
-                                                <dt itemprop="name">Benjamin Perrault</dt>
-                                                <dd>&nbsp;</dd>
-                                                <dt>Phone:</dt>
-                                                <dd itemprop="telephone"><a href="tel:3306858585">+ 33 (0)6 85 85 85</a>
-                                                </dd>
-                                                <dt>Email:</dt>
-                                                <dd itemprop="email"><a
-                                                        href="mailto:&#066;&#101;&#110;&#064;&#099;&#111;&#099;&#111;&#114;&#105;&#099;&#111;&#046;&#099;&#111;&#109;">
-                                                    &#066;&#101;&#110;&#064;&#099;&#111;&#099;&#111;&#114;&#105;&#099;&#111;&#046;&#099;&#111;&#109;</a>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <address itemprop="address" itemscope
-                                                 itemtype="http://schema.org/PostalAddress">
-                                            <strong class="title">Adresse de l'annonce:</strong>
-                                            <span itemprop="streetAddress">5 route du Général Golfié</span>
-                                            <span itemprop="postalCode">058496</span>
-                                            <span itemprop="addressLocality">La baie de Mahon <br>La Réunion</span>
-                                        </address>
-                                    </div>
+                                    <footer class="section-foot">
+                                        <span class="result-counter">352 résultats</span>
+                                        <!-- pagination -->
+                                        <nav class="nav-pagination text-right">
+                                            <ul class="pagination">
+                                                <li><a aria-label="Previous" href="#"> <i
+                                                        class="icon-left-open-mini"></i>
+                                                    <span class="hidden">previous</span>
+                                                </a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a aria-label="Next" href="#"> <i class="icon-right-open-mini"></i>
+                                                    <span class="hidden">next</span>
+                                                </a></li>
+                                            </ul>
+                                        </nav>
+                                    </footer>
                                 </section>
-                                <!-- form-ad-detail -->
-                                <form action="#" class="form-ad-detail">
-                                    <fieldset>
-                                        <legend class="hidden">form-ad-detail</legend>
-                                        <div class="textarea-holder no-scroll">
-                                            <textarea placeholder="&Eacute;crire votre message"
-                                                      title="your message"></textarea>
-                                        </div>
-                                        <div class="btn-block text-center"><input type="submit" class="btn btn-default"
-                                                                                  value="Envoyer"></div>
-                                    </fieldset>
-                                </form>
-                                <!-- blog -->
-                                <div class="blog">
-                                    <div class="posts-holder">
-                                        <!-- post -->
-                                        <article class="post">
-                                            <header class="head">
-                                                <div class="author-img">
-                                                    <div class="img-holder">
-                                                        <img alt="Pierre" src="images/img2.png">
-                                                    </div>
-                                                    <a class="author-name" href="#"><strong>Anthoni N.</strong></a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span class="title">Hello!</span>
-                                                    <time datetime="2014-02-24">24/02/2014</time>
-                                                </div>
-                                            </header>
-                                            <div class="post-content">
-                                                <p>Phasellus sapien tellus, dapibus id commodo sed, laoreet lacinia
-                                                    sapien. Massa mauris, pulvinar nec elit eget, congue hendrerit
-                                                    tellus.</p>
-                                            </div>
-                                            <footer class="footer">
-                                                <span class="time"><i class="icon-clock"></i>15h03 GMT</span>
-                                            </footer>
-                                        </article>
-                                        <!-- post -->
-                                        <article class="post">
-                                            <header class="head">
-                                                <div class="author-img">
-                                                    <div class="img-holder">
-                                                        <img alt="Lucie" src="images/img2.png">
-                                                    </div>
-                                                    <a class="author-name" href="#"><strong>Vous</strong></a>
-                                                </div>
-                                                <div class="meta">
-                                                    <span class="title">Hello!</span>
-                                                    <time datetime="2014-02-24">24/02/2014</time>
-                                                </div>
-                                            </header>
-                                            <div class="post-content">
-                                                <p>Phasellus sapien tellus, dapibus id commodo sed, laoreet lacinia
-                                                    sapien. Massa mauris, pulvinar nec elit eget, congue hendrerit
-                                                    tellus.</p>
-                                            </div>
-                                            <footer class="footer">
-                                                <span class="time"><i class="icon-clock"></i>15h03 GMT</span>
-                                            </footer>
-                                        </article>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

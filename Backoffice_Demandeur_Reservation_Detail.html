@@ -119,9 +119,9 @@
                 <!-- breadcrumbs -->
                 <ol class="breadcrumb col-xs-12">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Fournisseur</a></li>
-                    <li><a href="#">Messagerie</a></li>
-                    <li>discussion avec Anthoni N.</li>
+                    <li><a href="#">Demandeur</a></li>
+                    <li><a href="#">Mes reservations</a></li>
+                    <li>N° de réservation : 215423541B</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -133,8 +133,8 @@
                                 <legend class="hidden">formswitchers</legend>
                                 <span class="title"><label for="applicant">Demandeur (2)</label></span>
                                 <div class="radio-holder">
-                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;">
-                                    <input type="radio" name="radio-switcher" id="provider" checked title="&nbsp;">
+                                    <input type="radio" name="radio-switcher" id="applicant" title="&nbsp;" checked>
+                                    <input type="radio" name="radio-switcher" id="provider" title="&nbsp;">
                                 </div>
                                 <strong class="counter"><label for="provider">Fournisseur (1)</label></strong>
                                 <input type="submit" class="hidden">
@@ -146,38 +146,53 @@
                                 <span class="hidden">opener</span>
                                 <i class="icon-down-open-mini"></i></a>
                             <ul class="nav nav-tabs" role="tablist">
-                                <li class="active"><a href="#" data-text="Messagerie">Messagerie</a></li>
-                                <li><a href="#" data-text="Mes reservations">Mes reservations</a></li>
-                                <li><a href="#" data-toggle="tab" data-text="Mes annonces">Mes annonces</a></li>
-                                <li><a href="#" data-text="Mes paiements">Mes paiements</a></li>
+                                <li><a href="#" data-text="Messagerie">Messagerie</a></li>
+                                <li class="active"><a href="#" data-text="Mes reservations">Mes reservations</a></li>
+                                <li><a href="#" data-text="Mes annonces">Mes factures</a></li>
                                 <li><a href="#" data-text="Commentaires">Commentaires</a></li>
                                 <li><a href="#" data-text="Mon profil">Mon profil</a></li>
                             </ul>
                         </nav>
                         <!-- tab-content -->
                         <div class="tab-content no-border">
-                            <!-- messaging -->
+                            <!-- reservations -->
                             <div role="tabpanel" class="tab-pane active" id="messaging">
-                                <!-- form-ad-detail -->
-                                <form action="#" class="form-ad-detail">
-                                    <fieldset>
-                                        <legend class="hidden">form-ad-detail</legend>
-                                        <div class="ad-detail">
-                                            <div class="area">
-                                                <div class="img-holder">
-                                                    <img src="images/img15.png" alt="image description">
+                                <!-- postarea -->
+                                <section class="postarea alt2">
+                                    <div class="posts-holder">
+                                        <!-- post -->
+                                        <article class="post">
+                                            <div class="post-area">
+                                                <div class="img-holder"><a href="#"><img src="images/img15.png"
+                                                                                         alt="image description"></a>
                                                 </div>
-                                                <div class="box">
-                                                    <strong class="ad-title">Titre de l’annonce</strong>
-
-                                                    <div class="author-detail">
-                                                        <div class="author-img">
-                                                            <img src="images/img2.png" alt="author description">
+                                                <div class="area">
+                                                    <header class="head">
+                                                        <div class="area">
+                                                            <h2><a href="#">Titre de l'annonce</a></h2>
                                                         </div>
-                                                        <div class="box">
-                                                            <strong class="author-name">Demandeur : <a href="#">Anthoni
-                                                                N.</a></strong>
-                                                            <!-- rating -->
+                                                        <div class="meta">
+                                                            <span class="booking-info">N&deg; de reservation : <strong>215423541
+                                                                B</strong></span>
+                                                        </div>
+                                                        <div class="booking-detail">
+                                                            <ul class="list-inline">
+                                                                <li>Date de debut:
+                                                                    <time datetime="2015-05-12">12/05/2015</time>
+                                                                </li>
+                                                                <li>Date de fin :
+                                                                    <time datetime="2015-05-02">20/05/2015</time>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </header>
+                                                    <div class="post-content">
+                                                        <div class="author-img">
+                                                            <img src="images/img2.png" alt="author-description">
+                                                        </div>
+                                                        <div class="textbox">
+                                                            <span class="author-info">Demandeur : <strong>Anthoni
+                                                                N.</strong></span>
                                                             <ul class="rating list-inline">
                                                                 <li>
                                                                     <span class="icon-star">
@@ -209,12 +224,52 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="btn-block text-center hidden">
-                                                <a href="#" class="btn btn-primary">Réserver cette location</a>
-                                            </div>
+                                            <footer class="footer">
+                                                <strong class="price">
+                                                    <span>422,00€</span>
+                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                            data-placement="right" data-toggle="tooltip"
+                                                            class="tooltip-button" type="button">?
+                                                    </button>
+                                                </strong>
+                                                <strong class="booking-duration">Duree de la reservation :
+                                                    <span class="normal-text">4</span>
+                                                </strong>
+                                                <span class="btn btn-algae-green">Statut: Accepté &amp; payé</span>
+                                            </footer>
+                                        </article>
+                                    </div>
+                                    <div class="location-holder" itemscope itemtype="http://schema.org/Organization">
+                                        <div class="contact-info">
+                                            <strong class="title">Information de contact du fournisseur:</strong>
+                                            <dl>
+                                                <dt itemprop="name">Benjamin Perrault</dt>
+                                                <dd>&nbsp;</dd>
+                                                <dt>Phone:</dt>
+                                                <dd itemprop="telephone"><a href="tel:3306858585">+ 33 (0)6 85 85 85</a>
+                                                </dd>
+                                                <dt>Email:</dt>
+                                                <dd itemprop="email"><a
+                                                        href="mailto:&#066;&#101;&#110;&#064;&#099;&#111;&#099;&#111;&#114;&#105;&#099;&#111;&#046;&#099;&#111;&#109;">
+                                                    &#066;&#101;&#110;&#064;&#099;&#111;&#099;&#111;&#114;&#105;&#099;&#111;&#046;&#099;&#111;&#109;</a>
+                                                </dd>
+                                            </dl>
                                         </div>
+                                        <address itemprop="address" itemscope
+                                                 itemtype="http://schema.org/PostalAddress">
+                                            <strong class="title">Adresse de l'annonce:</strong>
+                                            <span itemprop="streetAddress">5 route du Général Golfié</span>
+                                            <span itemprop="postalCode">058496</span>
+                                            <span itemprop="addressLocality">La baie de Mahon <br>La Réunion</span>
+                                        </address>
+                                    </div>
+                                </section>
+                                <!-- form-ad-detail -->
+                                <form action="#" class="form-ad-detail">
+                                    <fieldset>
+                                        <legend class="hidden">form-ad-detail</legend>
                                         <div class="textarea-holder no-scroll">
-                                            <textarea placeholder="écrire votre message"
+                                            <textarea placeholder="&Eacute;crire votre message"
                                                       title="your message"></textarea>
                                         </div>
                                         <div class="btn-block text-center"><input type="submit" class="btn btn-default"

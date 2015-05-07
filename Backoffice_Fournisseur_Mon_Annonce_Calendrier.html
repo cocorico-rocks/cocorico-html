@@ -122,7 +122,7 @@
                     <li><a href="#">Fournisseur</a></li>
                     <li><a href="#">Mes annonces</a></li>
                     <li><a href="#">Titre de l'annonce</a></li>
-                    <li>Prix &amp; politique</li>
+                    <li>Calendrier</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -210,17 +210,16 @@
                                                 <!-- nav-tabs -->
                                                 <ul class="nav nav-tabs" role="tablist">
                                                     <li><a href="#" data-text="Présentation">Présentation</a></li>
-                                                    <li role="presentation" class="active"><a href="#"
-                                                                                              data-text="Prix &amp; politique">Prix
-                                                        &amp; politique</a></li>
-                                                    <li><a href="#" data-text="Calendrier">Calendrier
+                                                    <li><a href="#" data-text="Prix &amp; politique">Prix &amp;
+                                                        politique</a></li>
+                                                    <li role="presentation" class="active"><a href="#calendar"
+                                                                                              data-text="Calendrier">Calendrier
                                                         <span class="hidden">&nbsp;</span>
                                                     </a></li>
                                                     <li><a href="#" data-text="Photos">Photos</a></li>
                                                     <li><a href="#" data-text="Caractéristiques">Caractéristiques</a>
                                                     </li>
-                                                    <li><a href="#" data-text="Informations divers">Informations
-                                                        divers</a></li>
+                                                    <li><a href="#" data-text="À propos">Informations divers</a></li>
                                                     <li><a href="#" data-text="À propos">À propos</a></li>
                                                 </ul>
                                             </nav>
@@ -257,8 +256,8 @@
                                             <legend class="hidden">form area</legend>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
-                                                <!-- tab policy -->
-                                                <div role="tabpanel" class="tab-pane active" id="policy">
+                                                <!-- tab calendar -->
+                                                <div role="tabpanel" class="tab-pane active" id="calendar">
                                                     <!-- alert -->
                                                     <div role="alert" class="alert alert-warning">
                                                         <i class="ico exclamation">!</i>
@@ -271,195 +270,10 @@
                                                     </div>
                                                     <!-- form-holder -->
                                                     <div class="form-holder">
-                                                        <h2>Prix &amp; politique</h2>
-                                                        <!-- price-section -->
-                                                        <div class="price-section">
-                                                            <div class="column">
-                                                                <h3>Prix par défaut</h3>
+                                                        <h2>Calendrier</h2>
+                                                        <strong class="sub-heading">Choisissez les dates concernées
+                                                            :</strong>
 
-                                                                <div class="field-row">
-                                                                    <span class="label">
-                                                                        <label for="per-day-price">Prix par jour
-                                                                            :</label>
-                                                                    </span>
-                                                                    <span class="info">
-                                                                        - &euro;
-                                                                        <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                                                data-placement="right"
-                                                                                data-toggle="tooltip"
-                                                                                class="tooltip-button" type="button">?
-                                                                        </button>
-                                                                    </span>
-                                                                    <div class="field-holder">
-                                                                        <input type="text" class="form-control"
-                                                                               id="per-day-price">
-                                                                    </div>
-                                                                </div>
-                                                                <ul class="list-unstyled price-info">
-                                                                    <li>
-                                                                        Vous encaisserez :
-                                                                        <span class="info">
-                                                                            - &euro;
-                                                                            <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                                                    data-placement="right"
-                                                                                    data-toggle="tooltip"
-                                                                                    class="tooltip-button"
-                                                                                    type="button">?
-                                                                            </button>
-                                                                        </span>
-                                                                    </li>
-                                                                    <li>
-                                                                        Notre commission :
-                                                                        <span class="info">
-                                                                            - &euro;
-                                                                            <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                                                    data-placement="right"
-                                                                                    data-toggle="tooltip"
-                                                                                    class="tooltip-button"
-                                                                                    type="button">?
-                                                                            </button>
-                                                                        </span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="column">
-                                                                <h3>Simulateur de prix</h3>
-
-                                                                <div class="price-area datepicker-holder">
-                                                                    <div class="col">
-                                                                        <strong class="title"><label
-                                                                                for="simulator-start">De
-                                                                            :</label></strong>
-
-                                                                        <div class="input-append date field-holder">
-                                                                            <span class="add-on">
-                                                                                <i data-date-icon="icon-calendar"
-                                                                                   data-time-icon="icon-time"
-                                                                                   class="icon-calendar"></i>
-                                                                            </span>
-                                                                            <div class="field-holder"><input type="text"
-                                                                                                             id="simulator-start"
-                                                                                                             class="form-control from"
-                                                                                                             placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col">
-                                                                        <strong class="title"><label
-                                                                                for="simulator-end">&Aacute;
-                                                                            :</label></strong>
-
-                                                                        <div class="input-append date field-holder">
-                                                                            <span class="add-on">
-                                                                                <i data-date-icon="icon-calendar"
-                                                                                   data-time-icon="icon-time"
-                                                                                   class="icon-calendar"></i>
-                                                                            </span>
-                                                                            <div class="field-holder"><input type="text"
-                                                                                                             id="simulator-end"
-                                                                                                             class="form-control to"
-                                                                                                             placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <strong class="price">645€
-                                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                                            data-placement="right" data-toggle="tooltip"
-                                                                            class="tooltip-button" type="button">?
-                                                                    </button>
-                                                                </strong>
-                                                                <ul class="list-inline price-info">
-                                                                    <li>
-                                                                        Vous encaisserez :
-                                                                        <span class="info">
-                                                                            589 &euro;
-                                                                            <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                                                    data-placement="right"
-                                                                                    data-toggle="tooltip"
-                                                                                    class="tooltip-button"
-                                                                                    type="button">?
-                                                                            </button>
-                                                                        </span>
-                                                                    </li>
-                                                                    <li>
-                                                                        Notre commission :
-                                                                        <span class="info">
-                                                                            56 &euro;
-                                                                            <button title="Au survol de la souris, des informations complémentaires apparaissent."
-                                                                                    data-placement="right"
-                                                                                    data-toggle="tooltip"
-                                                                                    class="tooltip-button"
-                                                                                    type="button">?
-                                                                            </button>
-                                                                        </span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <!-- discount -->
-                                                        <div class="discount-area">
-                                                            <h2>Réductions</h2>
-                                                            <!-- discount-list -->
-                                                            <ul class="discount-list list-inline js-removed-row">
-                                                                <li>
-                                                                    <span class="label"><label for="decrement">Appliquer
-                                                                        une réduction de </label></span>
-                                                                    <div class="field-holder"><input data-ending="%"
-                                                                                                     type="number"
-                                                                                                     class="form-control"
-                                                                                                     value="10"
-                                                                                                     id="decrement">
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="label"><label for="per-day-price2">sur
-                                                                        le prix par jour, à partir de </label></span>
-                                                                    <div class="field-holder"><input type="number"
-                                                                                                     class="form-control"
-                                                                                                     value="7"
-                                                                                                     id="per-day-price2">
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="label">jours commandés.</span>
-                                                                    <a class="close" href="#">
-                                                                        <span class="hidden">Close</span>
-                                                                        <i class="icon-cancel"></i></a></li>
-                                                            </ul>
-                                                            <!-- discount-list -->
-                                                            <ul class="discount-list list-inline js-removed-row">
-                                                                <li>
-                                                                    <span class="label"><label for="decrement2">Appliquer
-                                                                        une réduction de </label></span>
-                                                                    <div class="field-holder"><input data-ending="%"
-                                                                                                     type="number"
-                                                                                                     class="form-control"
-                                                                                                     value="15"
-                                                                                                     id="decrement2">
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="label"><label for="per-day-price3">sur
-                                                                        le prix par jour, à partir de </label></span>
-                                                                    <div class="field-holder"><input type="number"
-                                                                                                     class="form-control"
-                                                                                                     value="30"
-                                                                                                     id="per-day-price3">
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="label">jours commandés.</span>
-                                                                    <a class="close" href="#">
-                                                                        <span class="hidden">Close</span>
-                                                                        <i class="icon-cancel"></i></a></li>
-                                                            </ul>
-                                                            <div class="btn-block text-center">
-                                                                <button type="submit" class="btn btn-default">Ajouter
-                                                                    une réduction
-                                                                </button>
-                                                            </div>
-                                                        </div>
                                                         <div class="form-block">
                                                             <!-- price-range -->
                                                             <div class="price-range">
@@ -467,11 +281,11 @@
 
                                                                 <div class="field-row time datepicker-holder">
                                                                     <div class="col">
-                                                                        <strong class="title"><label for="start3">De
+                                                                        <strong class="title"><label for="start">De
                                                                             :</label></strong>
 
                                                                         <div class="input-append date field-holder">
-                                                                            <input type="text" id="start3"
+                                                                            <input type="text" id="start"
                                                                                    class="form-control from"
                                                                                    placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/">
                                                                             <span class="add-on">
@@ -482,11 +296,11 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="col">
-                                                                        <strong class="title"><label for="end3">&Aacute;
+                                                                        <strong class="title"><label for="end">&Agrave;
                                                                             :</label></strong>
 
                                                                         <div class="input-append date field-holder">
-                                                                            <input type="text" id="end3"
+                                                                            <input type="text" id="end"
                                                                                    class="form-control to"
                                                                                    placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/">
                                                                             <span class="add-on">
@@ -500,52 +314,52 @@
                                                                 <h3>Choisissez les jours de la semaine concernées :</h3>
                                                                 <ul class="list-inline check-list">
                                                                     <li>
-                                                                        <input type="checkbox" id="check8" checked>
+                                                                        <input type="checkbox" id="check1" checked>
                                                                         <span class="label"><label
-                                                                                for="check8">Lundi</label></span>
+                                                                                for="check1">Lundi</label></span>
                                                                     </li>
                                                                     <li>
-                                                                        <input type="checkbox" id="check9" checked>
+                                                                        <input type="checkbox" id="check2" checked>
                                                                         <span class="label"><label
-                                                                                for="check9">Mardi</label></span>
+                                                                                for="check2">Mardi</label></span>
                                                                     </li>
                                                                     <li>
-                                                                        <input type="checkbox" id="check10" checked>
-                                                                        <span class="label"><label for="check10">Mercredi</label>
-                                                                        </span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check11" checked>
+                                                                        <input type="checkbox" id="check3" checked>
                                                                         <span class="label"><label
-                                                                                for="check11">Jeudi</label></span>
+                                                                                for="check3">Mercredi</label></span>
                                                                     </li>
                                                                     <li>
-                                                                        <input type="checkbox" id="check12" checked>
-                                                                        <span class="label"><label for="check12">Vendredi</label>
-                                                                        </span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check13" checked>
+                                                                        <input type="checkbox" id="check4" checked>
                                                                         <span class="label"><label
-                                                                                for="check13">Samedi</label></span>
+                                                                                for="check4">Jeudi</label></span>
                                                                     </li>
                                                                     <li>
-                                                                        <input type="checkbox" id="check14" checked>
-                                                                        <span class="label"><label for="check14">Dimanche</label>
-                                                                        </span>
+                                                                        <input type="checkbox" id="check5" checked>
+                                                                        <span class="label"><label
+                                                                                for="check5">Vendredi</label></span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check6" checked>
+                                                                        <span class="label"><label
+                                                                                for="check6">Samedi</label></span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="check7" checked>
+                                                                        <span class="label"><label
+                                                                                for="check7">Dimanche</label></span>
                                                                     </li>
                                                                 </ul>
-                                                                <div class="field-row agenda">
-                                                                    <span class="label">
-                                                                        <label for="per-day-price4">Appliquer le prix
-                                                                            par jour suivant :</label>
-                                                                    </span>
-                                                                    <span class="sign">
-                                                                        - &euro;
-                                                                    </span>
-                                                                    <div class="field-holder">
-                                                                        <input type="text" class="form-control"
-                                                                               id="per-day-price4">
+                                                                <div class="location">
+                                                                    <span class="label"><label for="there">Rendre
+                                                                        :</label></span>
+                                                                    <div class="select-holder">
+                                                                        <select class="no-arrow" title="&nbsp;"
+                                                                                id="there">
+                                                                            <option>Rendre indisponible</option>
+                                                                            <option>option 2</option>
+                                                                            <option>option 3</option>
+                                                                            <option>option 4</option>
+                                                                        </select>
                                                                     </div>
                                                                 </div>
                                                                 <div class="btn-block text-center">
@@ -555,52 +369,14 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- booking-policy -->
-                                                        <div class="booking-policy">
-                                                            <h2>Politique de réservation et d'annulation</h2>
-
-                                                            <div class="field-row">
-                                                                <span class="label"><label for="min-period">Durée
-                                                                    minimale de la réservation :</label></span>
-                                                                <div class="field-holder">
-                                                                    <span class="label">unité de temps.</span>
-                                                                    <div class="field-holder"><input type="number"
-                                                                                                     value="3"
-                                                                                                     id="min-period">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="field-row">
-                                                                <span class="label"><label for="max-period">Durée
-                                                                    maximale de la réservation :</label></span>
-                                                                <div class="field-holder">
-                                                                    <span class="label">unité de temps.</span>
-                                                                    <div class="field-holder"><input type="number"
-                                                                                                     value="8"
-                                                                                                     id="max-period">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="field-row policy">
-                                                                <span class="label"><label for="cancel-policy">Politique
-                                                                    d'annulation :</label></span>
-                                                                <div class="field-holder">
-                                                                    <select class="no-arrow" id="cancel-policy">
-                                                                        <option>Flexible</option>
-                                                                        <option>Strict</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                         <div class="form-block">
                                                             <h3>Calendrier des disponibilités </h3>
 
                                                             <p>Vous pouvez cliquer sur une date pour changer sa
                                                                 disponibilité.</p>
                                                             <!-- date-slider -->
-                                                            <div class="date-slider alt">
-                                                                <div class="calendar-block"
-                                                                     data-events="php/get-events.php"></div>
+                                                            <div class="date-slider">
+                                                                <div class="calendar-block"></div>
                                                             </div>
                                                         </div>
                                                     </div>

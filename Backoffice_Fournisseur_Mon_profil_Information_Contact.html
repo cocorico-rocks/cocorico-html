@@ -121,7 +121,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Fournisseur</a></li>
                     <li><a href="#">Mon profil</a></li>
-                    <li>à propos de moi</li>
+                    <li>Information de contact</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -209,15 +209,14 @@
                                             <i class="icon-down-open-mini"></i></a>
                                         <!-- nav-tabs -->
                                         <ul class="nav nav-tabs" role="tablist">
-                                            <li role="presentation" class="active"><a href="#about-me"
-                                                                                      aria-controls="about-me"
-                                                                                      role="tab" data-toggle="tab"
-                                                                                      data-text="À propos de moi">À
-                                                propos de moi</a></li>
+                                            <li><a href="#" data-text="À propos de moi">À propos de moi</a></li>
                                             <li><a href="#" data-text="Information de paiement">Information de
                                                 paiement</a></li>
-                                            <li><a href="#" data-text="Information de contact">Information de
-                                                contact</a></li>
+                                            <li class="active" role="presentation"><a href="#contact-info"
+                                                                                      aria-controls="contact-info"
+                                                                                      role="tab" data-toggle="tab"
+                                                                                      data-text="Information de contact">Information
+                                                de contact</a></li>
                                         </ul>
                                     </nav>
                                 </aside>
@@ -227,135 +226,94 @@
                                         <legend class="hidden">legent</legend>
                                         <div class="tab-content">
                                             <!-- tab about-me -->
-                                            <div id="about-me" class="tab-pane active" role="tabpanel">
-                                                <div class="form-holder columns-holder">
-                                                    <h3>À propos de moi</h3>
-                                                    <!-- about-info -->
-                                                    <div class="about-info">
+                                            <div id="contact-info" class="tab-pane active" role="tabpanel">
+                                                <div class="form-holder">
+                                                    <h3>Information de contact</h3>
+                                                    <!-- contact-info -->
+                                                    <div class="contact-info">
+                                                        <!-- column -->
                                                         <div class="column">
-                                                            <div class="image-upload-holder"
-                                                                 data-url="server/php/index.php">
-                                                                <div class="img-holder files"></div>
-                                                                <div class="uploader">
-                                                                    <input class="fileupload" type="file" name="files[]"
-                                                                           data-jcf='{"buttonText": "Charger", "placeholderText": "Selectionnez une image"}'
-                                                                           title="select your file">
+                                                            <div class="field-row">
+                                                                <span class="label"><label for="contact-email">Votre
+                                                                    email:</label></span>
+                                                                <div class="field-holder">
+                                                                    <input type="email" class="form-control"
+                                                                           id="contact-email">
                                                                 </div>
                                                             </div>
-                                                            <p>Glisser déposer les images dans l'ordre souhaitées. La
-                                                                première photo sera votre photo de couverture.</p>
-                                                            <ul class="list-inline images-list js-drag-holder">
-                                                                <li><img src="images/img14.png" alt="image description">
-                                                                </li>
-                                                                <li><img src="images/img14.png" alt="image description">
-                                                                </li>
-                                                                <li><img src="images/img14.png" alt="image description">
-                                                                </li>
-                                                                <li><img src="images/img14.png" alt="image description">
-                                                                </li>
-                                                                <li><img src="images/img14.png" alt="image description">
-                                                                </li>
-                                                                <li><img src="images/img14.png" alt="image description">
-                                                                </li>
-                                                            </ul>
+                                                            <div class="field-row">
+                                                                <span class="label block">Numéro de téléphone :</span>
+                                                            </div>
+                                                            <div class="field-row">
+                                                                <span class="label">
+                                                                    <label for="contact-code">Code pays :</label>
+                                                                    <span class="tooltip-btn">
+                                                                        <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                                                data-placement="right"
+                                                                                data-toggle="tooltip"
+                                                                                class="tooltip-button" type="button">?
+                                                                        </button>
+                                                                    </span>
+                                                                </span>
+                                                                <div class="field-holder">
+                                                                    <div class="code"><input type="text"
+                                                                                             class="form-control"
+                                                                                             id="contact-code"></div>
+                                                                    <div class="field-holder">
+                                                                        <input type="text" class="form-control"
+                                                                               title="&nbsp;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
+                                                        <!-- column -->
                                                         <div class="column">
-                                                            <div class="field-row from">
-                                                                <span class="label"><label for="from">D'où venez-vous
+                                                            <h4>Adresse de facturation:</h4>
+
+                                                            <div class="field-row alt">
+                                                                <span class="label"><label for="contact-address">Numéro
+                                                                    et nom de la rue:</label></span>
+                                                                <div class="field-holder">
+                                                                    <input type="text" class="form-control"
+                                                                           id="contact-address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-row">
+                                                                <span class="tooltip-btn">
+                                                                    <button title="Au survol de la souris, des informations complémentaires apparaissent."
+                                                                            data-placement="right" data-toggle="tooltip"
+                                                                            class="tooltip-button" type="button">?
+                                                                    </button>
+                                                                </span>
+                                                                <input type="text" class="form-control" title="&nbsp;">
+                                                            </div>
+                                                            <div class="field-row">
+                                                                <span class="label"><label for="contact-city">Ville
                                                                     :</label></span>
-                                                                <div class="select-holder">
-                                                                    <select class="no-arrow" id="from">
-                                                                        <option>France</option>
-                                                                        <option>Country 2</option>
-                                                                        <option>Country 3</option>
-                                                                        <option>Country 4</option>
+                                                                <div class="field-holder">
+                                                                    <input type="text" class="form-control"
+                                                                           id="contact-city">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-row">
+                                                                <span class="label"><label for="contact-code2">Code
+                                                                    postale:</label></span>
+                                                                <div class="field-holder">
+                                                                    <input type="text" class="form-control"
+                                                                           id="contact-code2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-row">
+                                                                <span class="label"><label for="contact-country">Pays
+                                                                    :</label></span>
+                                                                <div class="field-holder">
+                                                                    <select class="no-arrow" id="contact-country">
+                                                                        <option>&nbsp;</option>
+                                                                        <option>option</option>
+                                                                        <option>option</option>
+                                                                        <option>option</option>
                                                                     </select>
                                                                 </div>
-                                                            </div>
-                                                            <div class="languages-block">
-                                                                <div class="field-holder language">
-                                                                    <span class="label"><label for="language">Quelles
-                                                                        langues parlez-vous :</label></span>
-                                                                    <div class="field-holder">
-                                                                        <button type="submit"
-                                                                                class="btn btn-default btn-add">Ajouter
-                                                                        </button>
-                                                                        <div class="select-holder">
-                                                                            <select class="no-arrow" id="language">
-                                                                                <option>Anglais</option>
-                                                                                <option>France</option>
-                                                                                <option>Espagnol</option>
-                                                                                <option>Allemand</option>
-                                                                                <option>English</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <ul class="list-inline btns-list">
-                                                                    <li>
-                                                                        <a href="#" class="close" data-dismiss="alert"
-                                                                           aria-label="Close"><i
-                                                                                class="icon-cancel"></i>
-                                                                            <span class="hidden">close</span>
-                                                                        </a>
-                                                                        <a href="#" class="btn btn-default">Français</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" class="close" data-dismiss="alert"
-                                                                           aria-label="Close"><i
-                                                                                class="icon-cancel"></i>
-                                                                            <span class="hidden">close</span>
-                                                                        </a>
-                                                                        <a href="#" class="btn btn-default">Espagnol</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#" class="close" data-dismiss="alert"
-                                                                           aria-label="Close"><i
-                                                                                class="icon-cancel"></i>
-                                                                            <span class="hidden">close</span>
-                                                                        </a>
-                                                                        <a href="#" class="btn btn-default">Allemand</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <!-- message area -->
-                                                            <div class="message-area" role="tabpanel">
-                                                                <span class="label block">Dites-en plus sur vous :
-                                                                </span>
-                                                                <!-- nav-tabs -->
-                                                                <ul class="nav nav-tabs" role="tablist">
-                                                                    <li role="presentation" class="active"><a
-                                                                            href="#en-langauge"
-                                                                            aria-controls="en-langauge" role="tab"
-                                                                            data-toggle="tab" data-text="En Anglais">En
-                                                                        Anglais</a></li>
-                                                                    <li role="presentation"><a href="#french-langauge"
-                                                                                               aria-controls="french-langauge"
-                                                                                               role="tab"
-                                                                                               data-toggle="tab"
-                                                                                               data-text="En Français">En
-                                                                        Français</a></li>
-                                                                </ul>
-                                                                <div class="tab-content">
-                                                                    <!-- tab about-me -->
-                                                                    <div id="en-langauge" class="tab-pane active"
-                                                                         role="tabpanel">
-                                                                        <div class="thin-scroll"><textarea
-                                                                                title="english language"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- tab about-me -->
-                                                                    <div id="french-langauge" class="tab-pane"
-                                                                         role="tabpanel">
-                                                                        <div class="thin-scroll"><textarea
-                                                                                title="french language"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <a class="btn-translate" href="#">
-                                                                    <span>Traduire ce texte de l'Anglais au Français
-                                                                    </span>
-                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -443,20 +401,6 @@
 <noscript>Javascript must be enabled for the correct page display</noscript>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="js/vendor/jquery.ui.widget.js"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
-<!-- The basic File Upload plugin -->
-<script src="js/jquery.fileupload.js"></script>
-<!-- The File Upload processing plugin -->
-<script src="js/jquery.fileupload-process.js"></script>
-<!-- The File Upload image preview & resize plugin -->
-<script src="js/jquery.fileupload-image.js"></script>
-<!-- The File Upload validation plugin -->
-<script src="js/jquery.fileupload-validate.js"></script>
 <noscript>Javascript must be enabled for the correct page display</noscript>
 <!-- include custom JavaScript -->
 <script type="text/javascript" src="js/jquery.main.js"></script>

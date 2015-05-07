@@ -122,7 +122,7 @@
                     <li><a href="#">Fournisseur</a></li>
                     <li><a href="#">Mes annonces</a></li>
                     <li><a href="#">Titre de l'annonce</a></li>
-                    <li>Calendrier</li>
+                    <li>À propos</li>
                 </ol>
                 <!-- main-tabs -->
                 <div class="main-tabs col-xs-12">
@@ -212,15 +212,16 @@
                                                     <li><a href="#" data-text="Présentation">Présentation</a></li>
                                                     <li><a href="#" data-text="Prix &amp; politique">Prix &amp;
                                                         politique</a></li>
-                                                    <li role="presentation" class="active"><a href="#calendar"
-                                                                                              data-text="Calendrier">Calendrier
+                                                    <li><a href="#" data-text="Calendrier">Calendrier
                                                         <span class="hidden">&nbsp;</span>
                                                     </a></li>
                                                     <li><a href="#" data-text="Photos">Photos</a></li>
                                                     <li><a href="#" data-text="Caractéristiques">Caractéristiques</a>
                                                     </li>
-                                                    <li><a href="#" data-text="À propos">Informations divers</a></li>
-                                                    <li><a href="#" data-text="À propos">À propos</a></li>
+                                                    <li><a href="#" data-text="Informations divers">Informations
+                                                        divers</a></li>
+                                                    <li class="active"><a href="#" data-text="À propos">À propos</a>
+                                                    </li>
                                                 </ul>
                                             </nav>
                                             <!-- currency-converter -->
@@ -256,8 +257,8 @@
                                             <legend class="hidden">form area</legend>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
-                                                <!-- tab calendar -->
-                                                <div role="tabpanel" class="tab-pane active" id="calendar">
+                                                <!-- tab policy -->
+                                                <div role="tabpanel" class="tab-pane active" id="about">
                                                     <!-- alert -->
                                                     <div role="alert" class="alert alert-warning">
                                                         <i class="ico exclamation">!</i>
@@ -269,116 +270,111 @@
                                                             description détaillé.</p>
                                                     </div>
                                                     <!-- form-holder -->
-                                                    <div class="form-holder">
-                                                        <h2>Calendrier</h2>
-                                                        <strong class="sub-heading">Choisissez les dates concernées
-                                                            :</strong>
-
-                                                        <div class="form-block">
-                                                            <!-- price-range -->
-                                                            <div class="price-range">
-                                                                <h3>Prix par plage</h3>
-
-                                                                <div class="field-row time datepicker-holder">
-                                                                    <div class="col">
-                                                                        <strong class="title"><label for="start">De
-                                                                            :</label></strong>
-
-                                                                        <div class="input-append date field-holder">
-                                                                            <input type="text" id="start"
-                                                                                   class="form-control from"
-                                                                                   placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/">
-                                                                            <span class="add-on">
-                                                                                <i data-date-icon="icon-calendar"
-                                                                                   data-time-icon="icon-time"
-                                                                                   class="icon-calendar"></i>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col">
-                                                                        <strong class="title"><label for="end">&Agrave;
-                                                                            :</label></strong>
-
-                                                                        <div class="input-append date field-holder">
-                                                                            <input type="text" id="end"
-                                                                                   class="form-control to"
-                                                                                   placeholder="/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/">
-                                                                            <span class="add-on">
-                                                                                <i data-date-icon="icon-calendar"
-                                                                                   data-time-icon="icon-time"
-                                                                                   class="icon-calendar"></i>
-                                                                            </span>
-                                                                        </div>
+                                                    <div class="form-holder columns-holder alt">
+                                                        <h2>&Aacute; propos</h2>
+                                                        <!-- about-info -->
+                                                        <div class="about-info">
+                                                            <div class="column">
+                                                                <div class="image-upload-holder"
+                                                                     data-url="server/php/index.php">
+                                                                    <div class="img-holder files"></div>
+                                                                    <div class="uploader">
+                                                                        <input class="fileupload" type="file"
+                                                                               name="files[]"
+                                                                               data-jcf='{"buttonText": "Charger", "placeholderText": "Selectionnez une image"}'
+                                                                               title="select your file">
                                                                     </div>
                                                                 </div>
-                                                                <h3>Choisissez les jours de la semaine concernées :</h3>
-                                                                <ul class="list-inline check-list">
-                                                                    <li>
-                                                                        <input type="checkbox" id="check1" checked>
-                                                                        <span class="label"><label
-                                                                                for="check1">Lundi</label></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check2" checked>
-                                                                        <span class="label"><label
-                                                                                for="check2">Mardi</label></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check3" checked>
-                                                                        <span class="label"><label
-                                                                                for="check3">Mercredi</label></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check4" checked>
-                                                                        <span class="label"><label
-                                                                                for="check4">Jeudi</label></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check5" checked>
-                                                                        <span class="label"><label
-                                                                                for="check5">Vendredi</label></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check6" checked>
-                                                                        <span class="label"><label
-                                                                                for="check6">Samedi</label></span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <input type="checkbox" id="check7" checked>
-                                                                        <span class="label"><label
-                                                                                for="check7">Dimanche</label></span>
-                                                                    </li>
+                                                                <p>Glisser déposer les images dans l'ordre <i
+                                                                        class="icon-resize-full-alt"></i><br>
+                                                                    souhaitées. La première photo sera votre photo de
+                                                                    couverture.</p>
+                                                                <ul class="list-inline images-list js-drag-holder">
+                                                                    <li><img src="images/img14.png"
+                                                                             alt="image description"></li>
+                                                                    <li><img src="images/img14.png"
+                                                                             alt="image description"></li>
+                                                                    <li><img src="images/img14.png"
+                                                                             alt="image description"></li>
+                                                                    <li><img src="images/img14.png"
+                                                                             alt="image description"></li>
+                                                                    <li><img src="images/img14.png"
+                                                                             alt="image description"></li>
+                                                                    <li><img src="images/img14.png"
+                                                                             alt="image description"></li>
                                                                 </ul>
-                                                                <div class="location">
-                                                                    <span class="label"><label for="there">Rendre
-                                                                        :</label></span>
-                                                                    <div class="select-holder">
-                                                                        <select class="no-arrow" title="&nbsp;"
-                                                                                id="there">
-                                                                            <option>Rendre indisponible</option>
-                                                                            <option>option 2</option>
-                                                                            <option>option 3</option>
-                                                                            <option>option 4</option>
-                                                                        </select>
+                                                            </div>
+                                                            <div class="column">
+                                                                <div class="languages-block">
+                                                                    <h3>Mes langues</h3>
+
+                                                                    <div class="field-holder language">
+                                                                        <span class="label"><label for="language">Quelles
+                                                                            langues parlez-vous :</label></span>
+                                                                        <div class="field-holder">
+                                                                            <button type="submit"
+                                                                                    class="btn btn-default btn-add">
+                                                                                Ajouter
+                                                                            </button>
+                                                                            <div class="select-holder">
+                                                                                <select class="no-arrow" id="language">
+                                                                                    <option>Anglais</option>
+                                                                                    <option>France</option>
+                                                                                    <option>Espagnol</option>
+                                                                                    <option>Allemand</option>
+                                                                                    <option>English</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <ul class="list-inline btns-list">
+                                                                        <li>
+                                                                            <a href="#" class="close"
+                                                                               data-dismiss="alert"
+                                                                               aria-label="Close"><i
+                                                                                    class="icon-cancel"></i>
+                                                                                <span class="hidden">close</span>
+                                                                            </a>
+                                                                            <a href="#"
+                                                                               class="btn btn-default">Français</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" class="close"
+                                                                               data-dismiss="alert"
+                                                                               aria-label="Close"><i
+                                                                                    class="icon-cancel"></i>
+                                                                                <span class="hidden">close</span>
+                                                                            </a>
+                                                                            <a href="#"
+                                                                               class="btn btn-default">Espagnol</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" class="close"
+                                                                               data-dismiss="alert"
+                                                                               aria-label="Close"><i
+                                                                                    class="icon-cancel"></i>
+                                                                                <span class="hidden">close</span>
+                                                                            </a>
+                                                                            <a href="#"
+                                                                               class="btn btn-default">Allemand</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- message area -->
+                                                                <div class="message-area">
+                                                                    <h3>Dites-en plus sur vous :</h3>
+
+                                                                    <div class="thin-scroll"><textarea
+                                                                            title="english language"
+                                                                            placeholder="Sympa et accueillant, je suis heureux de vous proposer ces services!"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="btn-block text-center">
-                                                                    <button type="submit" class="btn btn-default">
-                                                                        Enregistrer
-                                                                    </button>
-                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="form-block">
-                                                            <h3>Calendrier des disponibilités </h3>
-
-                                                            <p>Vous pouvez cliquer sur une date pour changer sa
-                                                                disponibilité.</p>
-                                                            <!-- date-slider -->
-                                                            <div class="date-slider">
-                                                                <div class="calendar-block"></div>
-                                                            </div>
-                                                        </div>
+                                                    </div>
+                                                    <div class="btn-block text-center">
+                                                        <button type="submit" class="btn btn-default">Enregistrer
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -437,7 +433,7 @@
                         <!-- navarea -->
                         <nav class="navarea">
                             <ul class="list-unstyled pull-left">
-                                <li>À PROPOS</li>
+                                <li>&Aacute; PROPOS</li>
                                 <li><a href="#">Qui sommes-nous?</a></li>
                                 <li><a href="#">Comment &ccedil;a marche?</a></li>
                                 <li><a href="#">L'&eacute;quipe</a></li>
@@ -479,6 +475,20 @@
 <noscript>Javascript must be enabled for the correct page display</noscript>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="js/jquery.fileupload-image.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="js/jquery.fileupload-validate.js"></script>
 <noscript>Javascript must be enabled for the correct page display</noscript>
 <!-- include custom JavaScript -->
 <script type="text/javascript" src="js/jquery.main.js"></script>
