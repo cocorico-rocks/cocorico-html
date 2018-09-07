@@ -17,7 +17,7 @@
     'use strict';
     var path = require('path'),
         fs = require('fs'),
-    // Since Node 0.8, .existsSync() moved from path to fs:
+        // Since Node 0.8, .existsSync() moved from path to fs:
         _existsSync = fs.existsSync || path.existsSync,
         formidable = require('formidable'),
         nodeStatic = require('node-static'),
@@ -47,11 +47,11 @@
                 allowHeaders: 'Content-Type, Content-Range, Content-Disposition'
             },
             /* Uncomment and edit this section to provide the service via HTTPS:
-             ssl: {
-             key: fs.readFileSync('/Applications/XAMPP/etc/ssl.key/server.key'),
-             cert: fs.readFileSync('/Applications/XAMPP/etc/ssl.crt/server.crt')
-             },
-             */
+            ssl: {
+                key: fs.readFileSync('/Applications/XAMPP/etc/ssl.key/server.key'),
+                cert: fs.readFileSync('/Applications/XAMPP/etc/ssl.crt/server.crt')
+            },
+            */
             nodeStatic: {
                 cache: 3600 // seconds to cache served files
             }
@@ -148,7 +148,7 @@
             // Force a download dialog for unsafe file extensions:
             _headers['Content-Type'] = 'application/octet-stream';
             _headers['Content-Disposition'] = 'attachment; filename="' +
-            utf8encode(path.basename(files[0])) + '"';
+                utf8encode(path.basename(files[0])) + '"';
         }
         nodeStatic.Server.prototype.respond
             .call(this, pathname, status, _headers, files, stat, req, res, finish);
@@ -182,7 +182,7 @@
                         options.uploadDir + '/' + version + '/' + that.name
                     )) {
                     that[version + 'Url'] = baseUrl + version + '/' +
-                    encodeURIComponent(that.name);
+                        encodeURIComponent(that.name);
                 }
             });
         }
@@ -251,7 +251,7 @@
                         height: opts.height,
                         srcPath: options.uploadDir + '/' + fileInfo.name,
                         dstPath: options.uploadDir + '/' + version + '/' +
-                        fileInfo.name
+                            fileInfo.name
                     }, finish);
                 });
             }

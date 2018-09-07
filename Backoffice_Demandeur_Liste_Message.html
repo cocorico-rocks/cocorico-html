@@ -19,6 +19,8 @@
     <link type="text/css" media="all" rel="stylesheet" href="css/ie.css">
     <script type="text/javascript" src="js/ie.js"></script>
     <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/menu-sub-tabs.css">
 </head>
 <body class="loading">
 <!-- allow a user to go to the main content of the page -->
@@ -40,8 +42,8 @@
                                 00</a></li>
                             <li><a tabindex="11"
                                    href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><i
-                                    class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;
-                            </a></li>
+                                    class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -70,14 +72,46 @@
                                 <li><a href="#" tabindex="4">Qui sommes-nous?</a></li>
                                 <li><a href="#" tabindex="5">Favoris</a></li>
                                 <li class="dropdown">
-                                    <a href="#" tabindex="6" class="dropdown-toggle" data-toggle="dropdown"
-                                       role="button" aria-expanded="false">Mon espace (Back-end)(3)
+                                    <a href="#" tabindex="6"
+                                       class="dropdown-toggle" data-toggle="dropdown"
+                                       role="button" aria-expanded="false">
+                                        Mon espace (Back-end)(3)
                                         <span class="icon-down-open-mini"></span>
                                     </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Link 1</a></li>
-                                        <li><a href="#">Link 2</a></li>
-                                        <li><a href="#">Link 3</a></li>
+                                    <ul class="dropdown-menu display-sub-tabs" role="menu">
+                                        <li class="tab-list">
+                                            <ul class="nav menu-sub-tabs" role="tablist">
+                                                <li class="active firstTab">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                       data-id="oneTabs">Demandeur (2)</a>
+                                                </li>
+                                                <li class="menu-second-tab secondTab">
+                                                    <a href="#" aria-expanded="false" class="dropdown-toggle"
+                                                       data-id="twoTabs">Fournisseur (1)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown open display-tab" data-id="oneTabs">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Messages (1)</a></li>
+                                                <li><a href="#">Réservations 2</a></li>
+                                                <li><a href="#">Paiements</a></li>
+                                                <li><a href="#">Commentaires</a></li>
+                                                <li><a href="#">Profil</a></li>
+                                                <li><a href="#">Se déconnecter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown display-tab" data-id="twoTabs">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Messages (1)</a></li>
+                                                <li><a href="#">Réservations 2</a></li>
+                                                <li><a href="#">Annonces</a></li>
+                                                <li><a href="#">Paiements</a></li>
+                                                <li><a href="#">Commentaires</a></li>
+                                                <li><a href="#">Profil</a></li>
+                                                <li><a href="#">Se déconnecter</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown link-flag">
@@ -141,9 +175,8 @@
                         </form>
                         <!-- Nav tabs -->
                         <nav class="tabset-holder">
-                            <a href="#" class="opener">
-                                <span class="hidden">opener</span>
-                                <i class="icon-down-open-mini"></i></a>
+                            <a href="#" class="opener"><span class="hidden">opener</span><i
+                                    class="icon-down-open-mini"></i></a>
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="active"><a href="#" data-text="Messagerie">Messagerie</a></li>
                                 <li><a href="#" data-text="Mes reservations">Mes reservations</a></li>
@@ -178,30 +211,15 @@
                                                             <p>Personne avec qui vous discutez: <strong>Anthoni
                                                                 N.</strong></p>
                                                             <ul class="rating list-inline">
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">1</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">1</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">2</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">2</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">3</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">3</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">4</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">4</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">5</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">5</span></span>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -238,30 +256,15 @@
                                                             <p>Personne avec qui vous discutez: <strong>Anthoni
                                                                 N.</strong></p>
                                                             <ul class="rating list-inline">
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">1</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">1</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">2</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">2</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">3</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">3</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">4</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">4</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">5</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">5</span></span>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -298,30 +301,15 @@
                                                             <p>Personne avec qui vous discutez: <strong>Anthoni
                                                                 N.</strong></p>
                                                             <ul class="rating list-inline">
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">1</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">1</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">2</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">2</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">3</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">3</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">4</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">4</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">5</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">5</span></span>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -358,30 +346,15 @@
                                                             <p>Personne avec qui vous discutez: <strong>Anthoni
                                                                 N.</strong></p>
                                                             <ul class="rating list-inline">
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">1</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">1</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">2</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">2</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">3</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">3</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">4</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">4</span></span>
                                                                 </li>
-                                                                <li>
-                                                                    <span class="icon-star">
-                                                                        <span class="hide">5</span>
-                                                                    </span>
+                                                                <li><span class="icon-star"><span class="hide">5</span></span>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -409,17 +382,16 @@
                                         <nav class="nav-pagination text-right">
                                             <ul class="pagination">
                                                 <li><a aria-label="Previous" href="#"> <i
-                                                        class="icon-left-open-mini"></i>
-                                                    <span class="hidden">previous</span>
-                                                </a></li>
+                                                        class="icon-left-open-mini"></i><span
+                                                        class="hidden">previous</span> </a></li>
                                                 <li class="active"><a href="#">1</a></li>
                                                 <li><a href="#">2</a></li>
                                                 <li><a href="#">3</a></li>
                                                 <li><a href="#">4</a></li>
                                                 <li><a href="#">5</a></li>
-                                                <li><a aria-label="Next" href="#"> <i class="icon-right-open-mini"></i>
-                                                    <span class="hidden">next</span>
-                                                </a></li>
+                                                <li><a aria-label="Next" href="#"> <i
+                                                        class="icon-right-open-mini"></i><span
+                                                        class="hidden">next</span> </a></li>
                                             </ul>
                                         </nav>
                                     </footer>
@@ -451,8 +423,8 @@
                                     00 00 00</a></li>
                                 <li itemprop="email"><a
                                         href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;"><i
-                                        class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;
-                                </a></li>
+                                        class="icon-mail-alt"></i>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#109;&#097;&#105;&#108;&#046;&#102;&#114;</a>
+                                </li>
                             </ul>
                         </div>
                         <!-- navarea -->
@@ -478,16 +450,13 @@
             <div class="row">
                 <div class="col-xs-12">
                     <a href="#" class="by pull-right">Mentions légales</a>
-
                     <p>&copy; 2015 Tous droits reserves <a href="#">LOGOTYPE</a></p>
                 </div>
             </div>
         </footer>
     </div>
 </div>
-<div class="loader">
-    <span class="hidden">loader</span>
-</div>
+<div class="loader"><span class="hidden">loader</span></div>
 <!-- allow a user to go to the top of the page -->
 <div class="skip">
     <a href="#header">back to top</a>
@@ -506,14 +475,31 @@
 <noscript>Javascript must be enabled for the correct page display</noscript>
 <script type="text/javascript">
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style')
+        var msViewportStyle = document.createElement('style');
         msViewportStyle.appendChild(
-                document.createTextNode(
-                        '@-ms-viewport{width:auto!important}'
-                )
-        )
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
+            )
+        );
         document.querySelector('head').appendChild(msViewportStyle)
     }
+
+    // Menu sub Tab adding
+    $(document).ready(function () {
+        $('.menu-sub-tabs li a').on("click", function (e) {
+            e.preventDefault();
+            var selectTabs = $(this).attr('data-id');
+
+            $("ul.menu-sub-tabs li").removeClass("active");
+            $(this).parent().addClass("active");
+
+            if (selectTabs == 'twoTabs' || selectTabs == 'oneTabs') {
+                $('ul.display-sub-tabs').find('li.dropdown').removeClass('open');
+            }
+            $('ul.display-sub-tabs').find('li[data-id=' + selectTabs + '].dropdown').addClass('open');
+            return false;
+        });
+    });
 </script>
 <noscript>Javascript must be enabled for the correct page display</noscript>
 </body>

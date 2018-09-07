@@ -160,7 +160,9 @@
                     dfd = $.Deferred();
                 if (($.type(options.maxFileSize) === 'number' &&
                     file.size > options.maxFileSize) ||
-                    (options.fileTypes && !options.fileTypes.test(file.type)) || !loadImage(
+                    (options.fileTypes &&
+                        !options.fileTypes.test(file.type)) ||
+                    !loadImage(
                         file,
                         function (img) {
                             if (img.src) {

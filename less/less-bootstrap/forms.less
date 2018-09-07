@@ -2,6 +2,7 @@
 // Forms
 // --------------------------------------------------
 
+
 // Normalize non-controls
 //
 // Restyle and baseline non-control form elements.
@@ -33,6 +34,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
 
 // Normalize form controls
 //
@@ -194,7 +196,6 @@ input[type="date"] {
     cursor: pointer;
   }
 }
-
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -202,7 +203,6 @@ input[type="date"] {
   float: left;
   margin-left: -20px;
 }
-
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
@@ -218,7 +218,6 @@ input[type="date"] {
   font-weight: normal;
   cursor: pointer;
 }
-
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
@@ -283,11 +282,9 @@ input[type="checkbox"],
 .has-success {
   .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
 }
-
 .has-warning {
   .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
 }
-
 .has-error {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
 }
@@ -341,7 +338,6 @@ input[type="checkbox"],
       width: auto; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
     }
-
     // Input groups need that 100% width though
     .input-group > .form-control {
       width: 100%;
@@ -363,7 +359,6 @@ input[type="checkbox"],
       padding-left: 0;
       vertical-align: middle;
     }
-
     .radio input[type="radio"],
     .checkbox input[type="checkbox"] {
       float: none;

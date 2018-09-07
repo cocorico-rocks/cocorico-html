@@ -12,7 +12,6 @@
 @import "custom-variables.less";
 @import "_bootstrap-override.less";
 @import "custom-mixin.less";
-
 /* ---------------------------------------------------------
    2. General reset
    ---------------------------------------------------------*/
@@ -192,7 +191,6 @@
 html {
   background: @black2;
 }
-
 body {
   margin: 0;
   min-width: 320px;
@@ -203,7 +201,6 @@ body {
 img {
   border: 0;
 }
-
 input[type=submit],
 input[type=reset],
 button[type=submit],
@@ -212,11 +209,9 @@ button,
 a {
   .transition(all 0.35s ease);
 }
-
 a {
   text-decoration: underline;
 }
-
 input[type=text],
 input[type=tel],
 input[type=password],
@@ -234,7 +229,6 @@ textarea {
     .box-shadow(none);
   }
 }
-
 .form-control {
   padding: 5px;
   outline: none;
@@ -251,7 +245,6 @@ textarea {
     .placeholder(@gray);
   }
 }
-
 textarea {
   outline: none;
   .box-shadow(none);
@@ -263,18 +256,15 @@ textarea {
     border-color: @heart-hover;
   }
 }
-
 select {
   display: block;
   .size(100%, 36px);
 }
-
 input[type="radio"],
 input[type="checkbox"] {
   opacity: 0;
   visibility: hidden;
 }
-
 .skip a {
   color: @black;
   top: -9999px;
@@ -285,7 +275,6 @@ input[type="checkbox"] {
     .square(auto);
   }
 }
-
 .btn {
   border-radius: 4px;
   white-space: normal;
@@ -326,7 +315,6 @@ input[type="checkbox"] {
     background: @fuzzy-wuzzy-brown;
   }
 }
-
 span.btn {
   cursor: default;
   &:active,
@@ -335,7 +323,6 @@ span.btn {
     .box-shadow(none);
   }
 }
-
 /* ---------------------------------------------------------
    3. Сommon site styles
    ---------------------------------------------------------*/
@@ -497,7 +484,6 @@ span.btn {
     display: none;
   }
 }
-
 .jcf-select-drop.jcf-select-currency-selector {
   min-width: 150px;
   margin: 15px 0 0 -5px !important;
@@ -824,6 +810,7 @@ span.btn {
   }
 }
 
+
 /* visual */
 .visual {
   color: @white;
@@ -1026,19 +1013,19 @@ span.btn {
   }
 }
 
-/* ad-area */
-.ad-area {
+/* listing-area */
+.listing-area {
   position: relative;
-  .ad-holder {
+  .listing-holder {
     margin-bottom: 0;
   }
 }
 
-/* ad-post */
-.ad-post {
+/* listing-post */
+.listing-post {
   position: relative;
   margin-bottom: 30px;
-  .ad-box {
+  .listing-box {
     color: @gray;
     display: block;
     position: relative;
@@ -1140,7 +1127,7 @@ span.btn {
   .textbox {
     overflow: hidden;
   }
-  h3 {
+  h2 {
     margin: 0;
     color: @gray;
     .font-size(14px, 20px);
@@ -1655,7 +1642,7 @@ span.btn {
 .members-list {
   position: relative;
   padding: 18px 20px 2px;
-  h1, h2 {
+  h1 {
     margin: 0 0 21px;
     text-align: center;
     .font-size(24px, 24px);
@@ -1693,13 +1680,13 @@ span.btn {
 /* property-list */
 .property-list {
   position: relative;
-  h1, h2 {
+  h1 {
     color: @gray12;
     margin: 0 0 26px;
     .font-size(14px, 1.125);
   }
-  .ad-post {
-    + .ad-post {
+  .listing-post {
+    + .listing-post {
       margin: 20px 0 0;
     }
     .rating {
@@ -1718,7 +1705,7 @@ span.btn {
     .post-content {
       padding: 17px 20px 12px;
     }
-    h2, h3 {
+    h2 {
       margin: 0 0 3px;
     }
     .certified {
@@ -1818,12 +1805,12 @@ span.btn {
   margin: 24px 0 0;
   position: relative;
   padding: 19px 18px 18px 18px;
-  h2 {
+  h1 {
     color: @gray12;
     margin: 0 0 18px;
     .font-size(14px, 1.125);
   }
-  .ad-holder {
+  .listing-holder {
     margin: 0 0 19px;
     position: relative;
   }
@@ -1849,7 +1836,7 @@ span.btn {
   .post-content {
     overflow: hidden;
   }
-  h3 {
+  h2 {
     margin: 0 0 9px;
     .font-size(14px, 1.125);
     a {
@@ -2109,8 +2096,8 @@ span.btn {
   }
 }
 
-/* ad-section */
-.ad-section {
+/* listing-section */
+.listing-section {
   color: @gray;
   padding: 20px 0;
   position: relative;
@@ -2166,7 +2153,6 @@ span.btn {
     text-transform: none;
   }
 }
-
 .agreement {
   .clearfix;
   margin: 0 0 20px;
@@ -2268,7 +2254,6 @@ label {
     }
   }
 }
-
 .thin-scroll,
 .form-ad-info {
   textarea {
@@ -2294,7 +2279,6 @@ label {
     }
   }
 }
-
 .thin-scroll {
   .input-placeholder-text {
     line-height: 17px;
@@ -2836,34 +2820,11 @@ label {
     }
   }
 }
-
 .nav-tabs {
   border: 0;
   > li {
     margin-right: 6px;
-    > h2 > a {
-      display:block;
-      margin-right: 2px;
-      line-height: @line-height-base;
-      border: 1px solid transparent;
-      border-radius: @border-radius-base @border-radius-base 0 0;
-      &:hover {
-        border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
-      }
-    }
-    // Active state, and its :hover to override normal :hover
-    &.active > h2 > a {
-      &,
-      &:hover,
-      &:focus {
-        color: @nav-tabs-active-link-hover-color;
-        background-color: @nav-tabs-active-link-hover-bg;
-        border: 1px solid @nav-tabs-active-link-hover-border-color;
-        border-bottom-color: transparent;
-        cursor: default;
-      }
-    }
-    > a, h2 > a {
+    > a {
       color: @white;
       text-decoration: none;
       background: @off-white6;
@@ -3442,8 +3403,8 @@ label {
   overflow: hidden;
 }
 
-/* ad-container */
-.ad-container {
+/* listing-container */
+.listing-container {
   margin: -7px 0 0;
   position: relative;
   h1 {
@@ -3465,7 +3426,7 @@ label {
       .size(100%, 530px);
     }
   }
-  .nav-tabs > li > h2 > a {
+  .nav-tabs > li > a {
     min-width: 141px;
     text-align: center;
     padding: 13px 15px 7px;
@@ -3582,6 +3543,7 @@ label {
     }
   }
 }
+
 
 /* availability-schedule */
 .availability-schedule {
@@ -3845,8 +3807,8 @@ label {
   }
 }
 
-/* ad-detail */
-.ad-detail {
+/* listing-detail */
+.listing-detail {
   margin: 0 0 20px;
   .blog {
     margin: 5px 0 -11px;
@@ -3877,7 +3839,7 @@ label {
     padding: 26px 19px 31px;
   }
   .nav-tabs > li {
-    > h2 > a {
+    > a {
       min-width: 141px;
       text-align: center;
       padding: 11px 15px;
@@ -3951,9 +3913,9 @@ label {
       }
     }
   }
-  .ad-post {
+  .listing-post {
     margin: 0 0 20px;
-    .ad-box {
+    .listing-box {
       float: left;
       width: 100%;
       padding: 20px;
@@ -4165,18 +4127,13 @@ label {
 /* nav-tabs */
 .nav-tabs {
   > li {
-    > a, h2 > a {
+    > a {
       &:active,
       &:focus {
         background: @off-white6;
       }
     }
-    h2 {
-      font-size:@font-size-base;
-      margin:0;
-      font-weight:400;
-    }
-    &.active > a,&.active h2 > a {
+    &.active > a {
       &:focus {
         background: @white;
       }
@@ -5616,6 +5573,7 @@ label {
   }
 }
 
+
 .postarea {
   padding: 0 0 20px;
   position: relative;
@@ -6107,7 +6065,7 @@ label {
 .form-ad-detail {
   max-width: 680px;
   margin: 11px auto 57px;
-  .ad-detail {
+  .listing-detail {
     .clearfix;
     right: 10px;
     max-width: 600px;
@@ -6130,7 +6088,7 @@ label {
     margin: 3px 29px 0 0;
     border: @off-white10 solid 1px;
   }
-  .ad-title {
+  .listing-title {
     display: block;
     .font-size(18px);
     margin: 0 0 85px;
@@ -6367,7 +6325,6 @@ label {
 .table-section {
   padding-bottom: 234px !important;
 }
-
 .table-detail {
   border-collapse: collapse;
   thead {
@@ -6467,7 +6424,6 @@ label {
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.2)
 }
-
 .modal {
   .modal-content {
     padding: 19px 19px;
@@ -6705,6 +6661,7 @@ label {
   background: url(../images/icons.png) no-repeat 0 -27px;
 }
 
+
 /* ui-datepicker-div */
 #ui-datepicker-div {
   width: 260px;
@@ -6793,6 +6750,7 @@ label {
     }
   }
 }
+
 
 /* ---------------------------------------------------------
 	4. Custom form styles
@@ -6970,7 +6928,6 @@ body {
 .jcf-select-drop .jcf-select-drop-content {
   border: 1px solid @off-white2;
 }
-
 /* multiple select styles */
 .jcf-list-box {
   margin: 0 15px;
@@ -6979,7 +6936,6 @@ body {
   display: inline-block;
   border: 1px solid @gray;
 }
-
 /* select options styles */
 .jcf-list {
   .alignment;
@@ -7052,7 +7008,6 @@ body {
     }
   }
 }
-
 .jcf-select-drop .jcf-hover,
 .jcf-list-box .jcf-selected {
   color: @black;
@@ -7110,7 +7065,6 @@ body {
     border-width: 0 1px 1px 0;
   }
 }
-
 /* custom file input styles */
 .jcf-file {
   overflow: hidden;
@@ -7162,7 +7116,6 @@ body {
   position: relative;
   .box-sizing(content-box);
 }
-
 .jcf-scrollbar-vertical {
   top: 0;
   right: 0;
@@ -7200,7 +7153,6 @@ body {
     border-radius: 20px;
   }
 }
-
 .jcf-scrollbar-horizontal {
   left: 0;
   top: auto;
@@ -7337,14 +7289,12 @@ body {
     }
   }
 }
-
 .jcf-number.jcf-disabled .jcf-btn-dec:before,
 .jcf-number.jcf-disabled .jcf-btn-inc:before,
 .jcf-number .jcf-btn-dec.jcf-disabled:before,
 .jcf-number .jcf-btn-inc.jcf-disabled:before {
   opacity: 0.3;
 }
-
 .jcf-number.jcf-disabled input {
   background: #ddd;
 }
@@ -7363,6 +7313,7 @@ body {
   border-width: 0;
 }
 
+
 .infobox-wrapper {
   display: none;
 }
@@ -7373,6 +7324,7 @@ body {
  * (c) 2013 Adam Shaw
  */
 
+
 .fc {
   direction: ltr;
   text-align: left;
@@ -7382,10 +7334,10 @@ body {
   text-align: right;
 }
 
-body .fc {
-  /* extra precedence to overcome jqui */
+body .fc { /* extra precedence to overcome jqui */
   font-size: 1em;
 }
+
 
 /* Colors
 --------------------------------------------------------------------------------------------------*/
@@ -7417,25 +7369,23 @@ body .fc {
   background: none;
 }
 
-.fc-highlight {
-  /* when user is selecting cells */
+.fc-highlight { /* when user is selecting cells */
   background: #bce8f1;
   opacity: .3;
   filter: alpha(opacity=30); /* for IE */
 }
 
-.fc-bgevent {
-  /* default look for background events */
+.fc-bgevent { /* default look for background events */
   background: rgb(143, 223, 130);
   opacity: .3;
   filter: alpha(opacity=30); /* for IE */
 }
 
-.fc-nonbusiness {
-  /* default look for non-business-hours areas */
+.fc-nonbusiness { /* default look for non-business-hours areas */
   /* will inherit .fc-bgevent's styles */
   background: #d7d7d7;
 }
+
 
 /* Icons (inline elements with styled text that mock arrow icons)
 --------------------------------------------------------------------------------------------------*/
@@ -7518,6 +7468,7 @@ NOTE: use percentage font sizes or else old IE chokes
   top: 6%;
 }
 
+
 /* Buttons (styled <button> tags, normalized to work cross-browser)
 --------------------------------------------------------------------------------------------------*/
 
@@ -7544,27 +7495,23 @@ NOTE: use percentage font sizes or else old IE chokes
   padding: 0;
 }
 
-.fc-state-default {
-  /* non-theme */
+.fc-state-default { /* non-theme */
   border: 1px solid;
 }
 
-.fc-state-default.fc-corner-left {
-  /* non-theme */
+.fc-state-default.fc-corner-left { /* non-theme */
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.fc-state-default.fc-corner-right {
-  /* non-theme */
+.fc-state-default.fc-corner-right { /* non-theme */
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
 /* icons in buttons */
 
-.fc button .fc-icon {
-  /* non-theme */
+.fc button .fc-icon { /* non-theme */
   position: relative;
   top: -0.05em; /* seems to be a good adjustment across browsers */
   margin: 0 .2em;
@@ -7624,6 +7571,7 @@ NOTE: use percentage font sizes or else old IE chokes
   box-shadow: none;
 }
 
+
 /* Buttons Groups
 --------------------------------------------------------------------------------------------------*/
 
@@ -7636,16 +7584,15 @@ every button that is not first in a button group should scootch over one pixel a
 previous button's border...
 */
 
-.fc .fc-button-group > * {
-  /* extra precedence b/c buttons have margin set to zero */
+.fc .fc-button-group > * { /* extra precedence b/c buttons have margin set to zero */
   float: left;
   margin: 0 0 0 -1px;
 }
 
-.fc .fc-button-group > :first-child {
-  /* same */
+.fc .fc-button-group > :first-child { /* same */
   margin-left: 0;
 }
+
 
 /* Popover
 --------------------------------------------------------------------------------------------------*/
@@ -7655,8 +7602,7 @@ previous button's border...
   box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
 }
 
-.fc-popover .fc-header {
-  /* TODO: be more consistent with fc-head/fc-body */
+.fc-popover .fc-header { /* TODO: be more consistent with fc-head/fc-body */
   padding: 2px 4px;
 }
 
@@ -7696,6 +7642,7 @@ previous button's border...
   border-top: 0; /* where they meet, let the header have the border */
 }
 
+
 /* Misc Reusable Components
 --------------------------------------------------------------------------------------------------*/
 
@@ -7734,6 +7681,7 @@ hr.fc-divider {
   height: 100%; /* strech bg to bottom edge */
 }
 
+
 /* Tables
 --------------------------------------------------------------------------------------------------*/
 
@@ -7761,11 +7709,11 @@ hr.fc-divider {
   border-style: double; /* overcome neighboring borders */
 }
 
+
 /* Fake Table Rows
 --------------------------------------------------------------------------------------------------*/
 
-.fc .fc-row {
-  /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
+.fc .fc-row { /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
   /* no visible border by default. but make available if need be (scrollbar width compensation) */
   border-style: solid;
   border-width: 0;
@@ -7784,6 +7732,7 @@ hr.fc-divider {
 .fc-row:first-child table {
   border-top: 0 hidden transparent; /* no top border on first row */
 }
+
 
 /* Day Row (used within the header and the DayGrid)
 --------------------------------------------------------------------------------------------------*/
@@ -7853,21 +7802,21 @@ temporary rendered events).
   border-top: 0;
 }
 
+
 /* Scrolling Container
 --------------------------------------------------------------------------------------------------*/
 
-.fc-scroller {
-  /* this class goes on elements for guaranteed vertical scrollbars */
+.fc-scroller { /* this class goes on elements for guaranteed vertical scrollbars */
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.fc-scroller > * {
-  /* we expect an immediate inner element */
+.fc-scroller > * { /* we expect an immediate inner element */
   position: relative; /* re-scope all positions */
   width: 100%; /* hack to force re-sizing this inner element when scrollbars appear/disappear */
   overflow: hidden; /* don't let negative margins or absolute positioning create further scroll */
 }
+
 
 /* Global Event Styles
 --------------------------------------------------------------------------------------------------*/
@@ -7897,13 +7846,11 @@ temporary rendered events).
 }
 
 .fc-not-allowed, /* causes a "warning" cursor. applied on body */
-.fc-not-allowed .fc-event {
-  /* to override an event's custom cursor */
+.fc-not-allowed .fc-event { /* to override an event's custom cursor */
   cursor: not-allowed;
 }
 
-.fc-event .fc-bg {
-  /* the generic .fc-bg already does position */
+.fc-event .fc-bg { /* the generic .fc-bg already does position */
   z-index: 1;
   background: #fff;
   opacity: .25;
@@ -7919,6 +7866,7 @@ temporary rendered events).
   position: absolute;
   z-index: 3;
 }
+
 
 /* Horizontal Events
 --------------------------------------------------------------------------------------------------*/
@@ -7945,8 +7893,7 @@ temporary rendered events).
 
 /* resizer */
 
-.fc-h-event .fc-resizer {
-  /* positioned it to overcome the event's borders */
+.fc-h-event .fc-resizer { /* positioned it to overcome the event's borders */
   top: -1px;
   bottom: -1px;
   left: -1px;
@@ -7976,6 +7923,7 @@ temporary rendered events).
   cursor: e-resize;
 }
 
+
 /* DayGrid events
 ----------------------------------------------------------------------------------------------------
 We use the full "fc-day-grid-event" class instead of using descendants because the event won't
@@ -7987,8 +7935,7 @@ be a descendant of the grid when it is being dragged.
   padding: 0 1px;
 }
 
-.fc-day-grid-event .fc-content {
-  /* force events to be one-line tall */
+.fc-day-grid-event .fc-content { /* force events to be one-line tall */
   white-space: nowrap;
   overflow: hidden;
 }
@@ -7997,12 +7944,12 @@ be a descendant of the grid when it is being dragged.
   font-weight: bold;
 }
 
-.fc-day-grid-event .fc-resizer {
-  /* enlarge the default hit area */
+.fc-day-grid-event .fc-resizer { /* enlarge the default hit area */
   left: -3px;
   right: -3px;
   width: 7px;
 }
+
 
 /* Event Limiting
 --------------------------------------------------------------------------------------------------*/
@@ -8020,8 +7967,7 @@ a.fc-more:hover {
   text-decoration: underline;
 }
 
-.fc-limited {
-  /* rows and cells that are hidden because of a "more" link */
+.fc-limited { /* rows and cells that are hidden because of a "more" link */
   display: none;
 }
 
@@ -8061,15 +8007,13 @@ a.fc-more:hover {
 }
 
 /* the things within each left/right/center section */
-.fc .fc-toolbar > * > * {
-  /* extra precedence to override button border margins */
+.fc .fc-toolbar > * > * { /* extra precedence to override button border margins */
   float: left;
   margin-left: .75em;
 }
 
 /* the first thing within each left/center/right section */
-.fc .fc-toolbar > * > :first-child {
-  /* extra precedence to override button border margins */
+.fc .fc-toolbar > * > :first-child { /* extra precedence to override button border margins */
   margin-left: 0;
 }
 
@@ -8103,6 +8047,7 @@ a.fc-more:hover {
   z-index: 5;
 }
 
+
 /* View Structure
 --------------------------------------------------------------------------------------------------*/
 
@@ -8117,8 +8062,7 @@ a.fc-more:hover {
 }
 
 .fc-view, /* scope positioning and z-index's for everything within the view */
-.fc-view > table {
-  /* so dragged elements can be above the view's main element */
+.fc-view > table { /* so dragged elements can be above the view's main element */
   position: relative;
   z-index: 1;
 }
@@ -8197,11 +8141,11 @@ a.fc-more:hover {
   padding-bottom: 1em; /* give space underneath events for clicking/selecting days */
 }
 
+
 /* TimeGrid axis running down the side (for both the all-day area and the slot area)
 --------------------------------------------------------------------------------------------------*/
 
-.fc .fc-axis {
-  /* .fc to overcome default cell styles */
+.fc .fc-axis { /* .fc to overcome default cell styles */
   vertical-align: middle;
   padding: 0 4px;
   white-space: nowrap;
@@ -8219,12 +8163,12 @@ a.fc-more:hover {
   font-weight: normal; /* overcome jqui theme making it bold */
 }
 
+
 /* TimeGrid Structure
 --------------------------------------------------------------------------------------------------*/
 
 .fc-time-grid-container, /* so scroll container's z-index is below all-day */
-.fc-time-grid {
-  /* so slats/bg/content/etc positions get scoped within here */
+.fc-time-grid { /* so slats/bg/content/etc positions get scoped within here */
   position: relative;
   z-index: 1;
 }
@@ -8233,8 +8177,7 @@ a.fc-more:hover {
   min-height: 100%; /* so if height setting is 'auto', .fc-bg stretches to fill height */
 }
 
-.fc-time-grid table {
-  /* don't put outer borders on slats/bg/content/etc */
+.fc-time-grid table { /* don't put outer borders on slats/bg/content/etc */
   border: 0 hidden transparent;
 }
 
@@ -8243,8 +8186,7 @@ a.fc-more:hover {
 }
 
 .fc-time-grid .fc-slats,
-.fc-time-grid > hr {
-  /* the <hr> AgendaView injects when grid is shorter than scroller */
+.fc-time-grid > hr { /* the <hr> AgendaView injects when grid is shorter than scroller */
   position: relative;
   z-index: 2;
 }
@@ -8273,6 +8215,7 @@ a.fc-more:hover {
   z-index: 6;
 }
 
+
 /* TimeGrid Slats (lines that run horizontally)
 --------------------------------------------------------------------------------------------------*/
 
@@ -8285,16 +8228,15 @@ a.fc-more:hover {
   border-top-style: dotted;
 }
 
-.fc-time-grid .fc-slats .ui-widget-content {
-  /* for jqui theme */
+.fc-time-grid .fc-slats .ui-widget-content { /* for jqui theme */
   background: none; /* see through to fc-bg */
 }
+
 
 /* TimeGrid Highlighting Slots
 --------------------------------------------------------------------------------------------------*/
 
-.fc-time-grid .fc-highlight-container {
-  /* a div within a cell within the fc-highlight-skeleton */
+.fc-time-grid .fc-highlight-container { /* a div within a cell within the fc-highlight-skeleton */
   position: relative; /* scopes the left/right of the fc-highlight to be in the column */
 }
 
@@ -8305,22 +8247,20 @@ a.fc-more:hover {
   /* top and bottom will be in by JS */
 }
 
+
 /* TimeGrid Event Containment
 --------------------------------------------------------------------------------------------------*/
 
 .fc-time-grid .fc-event-container, /* a div within a cell within the fc-content-skeleton */
-.fc-time-grid .fc-bgevent-container {
-  /* a div within a cell within the fc-bgevent-skeleton */
+.fc-time-grid .fc-bgevent-container { /* a div within a cell within the fc-bgevent-skeleton */
   position: relative;
 }
 
-.fc-ltr .fc-time-grid .fc-event-container {
-  /* space on the sides of events for LTR (default) */
+.fc-ltr .fc-time-grid .fc-event-container { /* space on the sides of events for LTR (default) */
   margin: 0 2.5% 0 2px;
 }
 
-.fc-rtl .fc-time-grid .fc-event-container {
-  /* space on the sides of events for RTL */
+.fc-rtl .fc-time-grid .fc-event-container { /* space on the sides of events for RTL */
   margin: 0 2px 0 2.5%;
 }
 
@@ -8336,11 +8276,11 @@ a.fc-more:hover {
   right: 0;
 }
 
+
 /* Generic Vertical Event
 --------------------------------------------------------------------------------------------------*/
 
-.fc-v-event.fc-not-start {
-  /* events that are continuing from another day */
+.fc-v-event.fc-not-start { /* events that are continuing from another day */
   /* replace space made by the top border with padding */
   border-top-width: 0;
   padding-top: 1px;
@@ -8359,6 +8299,7 @@ a.fc-more:hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 
 /* TimeGrid Event Styling
 ----------------------------------------------------------------------------------------------------
@@ -8460,7 +8401,6 @@ be a descendant of the grid when it is being dragged.
 .jcf-scrollable-wrapper {
   width: 100% !important;
 }
-
 .calendar-box .fc-scroller,
 .calendar-box .fc-row {
   height: auto !important;
@@ -8547,6 +8487,8 @@ be a descendant of the grid when it is being dragged.
   }
 
 }
+
+
 
 /* ---------------------------------------------------------
 	5. Styles for Responsive web design
@@ -8659,7 +8601,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-section {
+  .listing-section {
     .head {
       margin: 0 0 30px;
     }
@@ -8677,7 +8619,7 @@ be a descendant of the grid when it is being dragged.
         }
       }
     }
-    .ad-post {
+    .listing-post {
       .certified {
         .icon-ok {
           margin: 0 7px 0 0;
@@ -8910,7 +8852,7 @@ be a descendant of the grid when it is being dragged.
   }
 
   .form-ad-detail {
-    .ad-detail {
+    .listing-detail {
       right: auto;
     }
   }
@@ -8945,7 +8887,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-post {
+  .listing-post {
     .post-info {
       min-height: 150px;
     }
@@ -9076,7 +9018,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-post {
+  .listing-post {
     .info-btns {
       float: left;
       width: 100%;
@@ -9101,7 +9043,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-post.small {
+  .listing-post.small {
     .rating {
       li {
         font-size: 12px;
@@ -9198,7 +9140,7 @@ be a descendant of the grid when it is being dragged.
   }
 
   .main-tabs {
-    .ad-post {
+    .listing-post {
       h2 {
         margin: 0 0 5px;
       }
@@ -9354,6 +9296,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 }
+
 
 /* styles for screens with width from 480px to 768px */
 @media screen and (max-width: (@screen-sm - 1)) {
@@ -9777,7 +9720,7 @@ be a descendant of the grid when it is being dragged.
     margin: 0;
   }
 
-  .ad-section {
+  .listing-section {
     .block {
       .alert {
         margin: 0;
@@ -9932,16 +9875,10 @@ be a descendant of the grid when it is being dragged.
           border-radius: 0 0 5px 5px;
         }
       }
-      h2{
-        margin:0;
-        font-weight: 400;
-        font-size:@font-size-base;
-      }
-      > a, h2 > a {
+      > a {
         margin: 0;
         border-radius: 0;
         border: 0 !important;
-        display:block;
         position: static;
         &:before {
           top: 0;
@@ -9960,7 +9897,7 @@ be a descendant of the grid when it is being dragged.
         }
       }
       &.active {
-        > a, h2 > a {
+        > a {
           position: static !important;
           &:before {
             display: block;
@@ -10078,7 +10015,7 @@ be a descendant of the grid when it is being dragged.
     margin: 0;
   }
 
-  .ad-detail {
+  .listing-detail {
     margin: 0 0 30px;
   }
 
@@ -10129,15 +10066,15 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-detail,
-  .ad-container {
-    .nav-tabs > li > h2 > a {
+  .listing-detail,
+  .listing-container {
+    .nav-tabs > li > a {
       text-align: left;
       padding: 10px 15px;
     }
   }
 
-  .ad-container {
+  .listing-container {
     margin: 0;
     padding: 10px 0 0;
     h1 {
@@ -10146,7 +10083,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-detail {
+  .listing-detail {
     .blog {
       .head {
         padding: 0 0 10px;
@@ -10542,7 +10479,7 @@ be a descendant of the grid when it is being dragged.
         .responsive-img;
       }
     }
-    .ad-title {
+    .listing-title {
       margin: 0 0 37px;
     }
   }
@@ -10821,7 +10758,7 @@ be a descendant of the grid when it is being dragged.
     .tab-content {
       padding: 10px 5px 0;
     }
-    .ad-post {
+    .listing-post {
       margin: 0 0 10px;
       .box-holder {
         display: block;
@@ -10837,7 +10774,7 @@ be a descendant of the grid when it is being dragged.
       h2 {
         .font-size(14px, 17px);
       }
-      .ad-box {
+      .listing-box {
         padding: 5px;
       }
       .area {
@@ -10853,7 +10790,7 @@ be a descendant of the grid when it is being dragged.
     }
   }
 
-  .ad-post {
+  .listing-post {
     .info-btns {
       padding: 10px 5px 5px;
     }
@@ -11164,7 +11101,7 @@ be a descendant of the grid when it is being dragged.
       width: 190px;
       margin: 0 auto 10px;
     }
-    .ad-title {
+    .listing-title {
       margin: 0 0 15px;
       text-align: center;
     }

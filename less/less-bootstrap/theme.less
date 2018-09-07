@@ -1,6 +1,8 @@
+
 //
 // Load core variables and mixins
 // --------------------------------------------------
+
 @import "variables.less";
 @import "mixins.less";
 
@@ -82,6 +84,8 @@
   .btn-styles(@btn-danger-bg);
 }
 
+
+
 //
 // Images
 // --------------------------------------------------
@@ -90,6 +94,8 @@
 .img-thumbnail {
   .box-shadow(0 1px 2px rgba(0, 0, 0, .075));
 }
+
+
 
 //
 // Dropdowns
@@ -100,7 +106,6 @@
   #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: darken(@dropdown-link-hover-bg, 5%));
   background-color: darken(@dropdown-link-hover-bg, 5%);
 }
-
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
@@ -125,7 +130,6 @@
     .box-shadow(inset 0 3px 9px rgba(0, 0, 0, .075));
   }
 }
-
 .navbar-brand,
 .navbar-nav > li > a {
   text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
@@ -188,6 +192,8 @@
   .alert-styles(@alert-danger-bg);
 }
 
+
+
 //
 // Progress bars
 // --------------------------------------------------
@@ -223,6 +229,8 @@
   .progress-bar-styles(@progress-bar-danger-bg);
 }
 
+
+
 //
 // List groups
 // --------------------------------------------------
@@ -231,7 +239,6 @@
   border-radius: @border-radius-base;
   .box-shadow(0 1px 2px rgba(0, 0, 0, .075));
 }
-
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
@@ -278,6 +285,8 @@
 .panel-danger > .panel-heading {
   .panel-heading-styles(@panel-danger-heading-bg);
 }
+
+
 
 //
 // Wells
