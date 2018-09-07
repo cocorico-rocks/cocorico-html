@@ -5511,8 +5511,9 @@ span.btn:focus {
 }
 
 .form-category.alt {
-    padding: 0 10px;
+    padding: 0;
     background: none;
+    margin-left: 10px;
 }
 
 .form-category .form-holder {
@@ -7593,6 +7594,11 @@ span.btn:focus {
     text-transform: none;
 }
 
+.btns-area.new-booking .btn-primary {
+    width: 33%;
+    margin: 0 auto;
+}
+
 .agreement {
     margin: 0 0 20px;
 }
@@ -9457,7 +9463,7 @@ label {
     right: 0;
     bottom: 0;
     position: absolute;
-    background: url(../images/none.gif);
+    background: url(./img/none.gif);
 }
 
 .card-type .jcf-radio {
@@ -18850,7 +18856,7 @@ images css for making it 4:3
 .head .author-img .img-holder,
 .area .box .author-detail .author-img {
     width: 60px;
-    /*height: 45px;*/
+    height: 45px;
     position: relative;
 }
 
@@ -20484,9 +20490,4 @@ h1[data-id="result-title"] {
 
 .list-comma span:last-child:after {
     content: ".";
-}
-
-.btns-area .btn-primary {
-    width: 33%;
-    margin: 0 auto;
 }

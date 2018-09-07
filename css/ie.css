@@ -37,7 +37,7 @@ input[type=password] {
 .gallery-slider .btn-prev {
     width: 29px;
     height: 14px;
-    background: url(../images/arrows.png) no-repeat 0 -24px;
+    background: url(./img/arrows.png) no-repeat 0 -24px;
 }
 .availability-schedule .jcf-scrollbar-vertical .jcf-scrollbar-dec:before,
 .gallery-slider .jcf-scrollbar-dec:before,
@@ -81,7 +81,7 @@ input[type=password] {
     position: absolute;
     margin: -13px 0 0 -7px;
     background-position: -39px 0;
-    background: url(../images/arrows.png) no-repeat -39px 0;
+    background: url(./img/arrows.png) no-repeat -39px 0;
 }
 .gallery-small .btn-next:before,
 .gallery-small .btn-prev:before,

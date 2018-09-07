@@ -577,8 +577,7 @@
                                                                 </ul>
                                                                 <div class="field-row agenda">
                                                                     <span class="label">
-                                                                        <label for="per-day-price4">Appliquer le prix
-                                                                            par jour suivant :</label>
+                                                                        <label for="per-day-price4">Prix</label>
                                                                     </span>
                                                                     <span class="sign">
                                                                         - &euro;
@@ -639,8 +638,11 @@
                                                                 disponibilité.</p>
                                                             <!-- date-slider -->
                                                             <div class="date-slider alt">
-                                                                <div class="calendar-block"
-                                                                     data-events="php/get-events.php"></div>
+                                                                <div id="calendar-container" class="edit-mode">
+                                                                    <div id="fc-calendar"
+                                                                         class="calendar-block time-unit-day available-by-default">
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -815,6 +817,40 @@
 <script src="js/css-class.js"></script>
 <script src="js/date-time.js"></script>
 <script src="js/common.js"></script>
+
+<script>
+    $(function () {
+        //FullCalendar
+        var calendar = $("#fc-calendar").fullCalendar({
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            height: null,
+            allDay: true,
+            editable: true,
+            lazyFetching: true,
+            lang: 'fr',
+            firstDay: 1,
+            displayEventEnd: true,
+            forceEventDuration: true,
+            defaultAllDayEventDuration: moment.duration('23:59'),
+            eventStartEditable: false,
+            eventDurationEditable: false,
+            allDaySlot: false,
+            timeFormat: {
+                month: 'H:mm',
+                week: 'H:mm',
+                day: 'H:mm'
+            },
+            nextDayThreshold: '00:00:00',
+
+        });
+        //End FullCalendar
+    });
+</script>
+
 <noscript>Javascript must be enabled for the correct page display</noscript>
 </body>
 </html>

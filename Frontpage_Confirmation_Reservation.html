@@ -498,26 +498,12 @@
                                     <div class="col expiry">
                                         <span class="label"><label for="expiry">Date d'expiration:*</label></span>
                                         <div class="field-holder">
-                                            <div class="col">
-                                                <select title="&nbsp;" class="no-arrow months-list" id="expiry">
-                                                    <option>Mois*</option>
-                                                    <option>Janvier</option>
-                                                    <option>Février</option>
-                                                    <option>Mars</option>
-                                                    <option>Avril</option>
-                                                    <option>Mai</option>
-                                                    <option>Juin</option>
-                                                    <option>Juillet</option>
-                                                    <option>Août</option>
-                                                    <option>Septembre</option>
-                                                    <option>Octobre</option>
-                                                    <option>Novembre</option>
-                                                    <option>Décembre</option>
-                                                </select>
-                                            </div>
-                                            <div class="col">
-                                                <input type="number" min="1" title="&nbsp;" placeholder="Année*">
-                                            </div>
+                                            <input type="text" id="cardExpirationMonth" name="cardExpirationMonth"
+                                                   required="required" maxlength="2" class="form-control split-input"
+                                                   placeholder="Mois (MM)">
+                                            <input type="text" id="cardExpirationYear" name="cardExpirationYear"
+                                                   required="required" maxlength="2" class="form-control split-input"
+                                                   placeholder="Année (YY)">
                                         </div>
                                     </div>
                                     <div class="col cvv">
@@ -537,13 +523,13 @@
                                 <input type="submit" class="hidden" value="submit">
                             </fieldset>
                         </form>
-                        <div class="btns-area">
+                        <div class="btns-area new-booking">
                             <div class="agreement">
                                 <input type="checkbox" id="agree">
                                 <span class="label"><label for="agree" class="jcf-label-active">J'accepte les conditions
                                     d'utilisation</label></span>
                             </div>
-                            <input type="submit" value="Valider la réservation" class="btn btn-primary">
+                            <input type="submit" value="Valider" class="btn btn-primary">
                         </div>
                     </div>
                 </div>
