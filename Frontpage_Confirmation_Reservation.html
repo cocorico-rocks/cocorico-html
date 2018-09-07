@@ -1,24 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Cocorico</title>
     <!-- set the encoding of your site -->
     <meta charset="utf-8">
     <!-- set the viewport width and initial-scale on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Cocorico</title>
+
     <!-- include the Open Sans google font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic'
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic'
           rel='stylesheet' type='text/css'>
     <!-- include the Raleway google font -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
           type='text/css'>
-    <!-- include the site stylesheet -->
-    <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+
     <!-- include HTML5 IE enabling script and stylesheet for IE -->
     <!--[if lt IE 9]>
     <link type="text/css" media="all" rel="stylesheet" href="css/ie.css">
     <script type="text/javascript" src="js/ie.js"></script>
     <![endif]-->
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#d61022">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml"/>
+
+    <!-- include the site stylesheet -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/vendor/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/fullcalendar-override.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <!--  Safely using .ready() before including jQuery -->
+    <script>
+        (function (w, d, u) {
+            w.readyQ = [];
+            w.bindReadyQ = [];
+
+            function p(x, y) {
+                if (x == "ready") {
+                    w.bindReadyQ.push(y);
+                } else {
+                    w.readyQ.push(x);
+                }
+            }
+
+            var a = {ready: p, bind: p};
+            w.$ = w.jQuery = function (f) {
+                if (f === d || f === u) {
+                    return a
+                } else {
+                    p(f)
+                }
+            }
+        })(window, document);
+    </script>
 </head>
 <body class="loading">
 <!-- allow a user to go to the main content of the page -->
@@ -636,32 +676,87 @@
 <div class="skip">
     <a href="#header">back to top</a>
 </div>
-<!-- include jQuery library -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<noscript>Javascript must be enabled for the correct page display</noscript>
-<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-<noscript>Javascript must be enabled for the correct page display</noscript>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<noscript>Javascript must be enabled for the correct page display</noscript>
-<!-- include custom JavaScript -->
-<script type="text/javascript" src="js/jquery.main.js"></script>
-<noscript>Javascript must be enabled for the correct page display</noscript>
-<script type="text/javascript">
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style');
-        msViewportStyle.appendChild(
-                document.createTextNode(
-                        '@-ms-viewport{width:auto!important}'
-                )
-        );
-        document.querySelector('head').appendChild(msViewportStyle)
-    }
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+
+<script>
+    //Global Javascript variables
+    var locale = 'fr';
+    var locales = ["en", "fr"];
+    var defaultCurrency = 'EUR';
+    var currentCurrency = 'EUR';
+    //Does the app is in day mode or time mode
+    var timeUnitIsDay = false;
+    var timeUnitAllDay = true;
+    var endDayIncluded = true;
+    var isAuthenticated = true;
+    var hoursAvailable = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
 </script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript"
+        src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/i18n/jquery-ui-i18n.min.js"></script>
+
+<script type="text/javascript">
+    var jqEnabled = window.jQuery && typeof window.jQuery("html") !== 'undefined';
+    jqEnabled || document.write('<script src="js/vendor/jquery.min.js"><\/script>');
+    jqEnabled || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>');
+    jqEnabled || document.write('<script src="js/vendor/jquery-ui-i18n.min.js"><\/script>');
+</script>
+
+<script>
+    (function ($, d) {
+        $.each(readyQ, function (i, f) {
+            $(f)
+        });
+        $.each(bindReadyQ, function (i, f) {
+            $(d).bind("ready", f)
+        })
+    })(jQuery, document)
+</script>
+
+<script type="text/javascript"
+        src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $.fn.modal || document.write('<script src="js/vendor/bootstrap.min.js"><\/script>');
+</script>
+
+<script src="js/vendor/moment.js"></script>
+<script src="js/vendor/json2.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/vendor/jquery.touch-punch.js"></script>
+<script src="js/vendor/hammer.js"></script>
+<script src="js/vendor/bootstrap-multiselect.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.js"></script>
+<script src="js/vendor/parsley.min.js"></script>
+<script src="js/vendor/jquery.unslider.js"></script>
+<script src="js/vendor/jquery.caroufredsel.min.js"></script>
+<script src="js/vendor/jquery.clearsearch.js"></script>
+<script src="js/vendor/placeholder.js"></script>
+<script src="js/vendor/jcf.js"></script>
+<script src="js/vendor/cookie-consent.js"></script>
+<script src="js/vendor/fullcalendar/fullcalendar.min.js"></script>
+<script src="js/vendor/fullcalendar/lang-all.js"></script>
+<script src="js/scroll-gallery.js"></script>
+<script src="js/fade-gallery.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/same-height.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/star-rating.js"></script>
+<script src="js/favorite.js"></script>
+<script src="js/currency.js"></script>
+<script src="js/language.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/multi-select.js"></script>
+<script src="js/category.js"></script>
+<script src="js/form.js"></script>
+<script src="js/css-class.js"></script>
+<script src="js/date-time.js"></script>
+<script src="js/common.js"></script>
+
 <noscript>Javascript must be enabled for the correct page display</noscript>
 </body>
 </html>
